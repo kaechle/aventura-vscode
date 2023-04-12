@@ -2,7 +2,7 @@
   "name": "aventura",
   "displayName": "Aventura",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.76.0"
   },
@@ -12,9 +12,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Aventura",
-        "uiTheme": "vs",
-        "path": "./themes/Aventura-color-theme.json"
+        "label": "Aventura Sundown",
+        "uiTheme": "vs-dark",
+        "path": "./themes/aventura-sundown.json"
+      },
+      {
+        "label": "Aventura Daybreak",
+        "uiTheme": "vs-dark",
+        "path": "./themes/aventura-daybreak.json"
       }
     ]
   }
