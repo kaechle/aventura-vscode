@@ -1,10 +1,10 @@
 {
-  "name": "aventura",
-  "displayName": "Aventura",
-  "description": "",
-  "version": "0.1.0",
+  "name": "finale",
+  "displayName": "Finale",
+  "description": "A custom theme for Visual Studio Code on macOS",
+  "version": "1.0.0",
   "engines": {
-    "vscode": "^1.76.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Themes"
@@ -12,15 +12,22 @@
   "contributes": {
     "themes": [
       {
-        "label": "Aventura Sundown",
-        "uiTheme": "vs-dark",
-        "path": "./themes/aventura-sundown.json"
+        "label": "Finale Sunrise",
+        "uiTheme": "hc-light",
+        "path": "./themes/finale-sunrise.json"
       },
       {
-        "label": "Aventura Daybreak",
+        "label": "Finale Sundown",
         "uiTheme": "vs-dark",
-        "path": "./themes/aventura-daybreak.json"
+        "path": "./themes/finale-sundown.json"
       }
-    ]
+    ],
+    "iconThemes": [
+			{
+				"id": "finale-icons",
+				"label": "Finale Icons",
+				"path": "./icons/finale-icons.json"
+			}
+		]
   }
 }
