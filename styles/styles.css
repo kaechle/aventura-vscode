@@ -46,7 +46,9 @@
   .monaco-editor .inlineSuggestionsHints,
   .monaco-editor .editor-widget,
   .monaco-editor .suggest-widget,
-  .monaco-editor .show-details {
+  .monaco-editor .show-details,
+  .monaco-alert,
+  .monaco-status {
     background: #48484888 !important;
     color: #ffffffdd !important;
     font-family: system-ui !important;
@@ -75,6 +77,8 @@
     border: 1px solid #eedddd22 !important;
     background-color: transparent !important;
   }
+
+
 }
 
 .quick-input-widget {
@@ -109,4 +113,8 @@
 
 .monaco-workbench .part.editor>.content .editor-group-container>.title .tabs-container>.tab .tab-label {
     line-height: 27px;
+}
+
+.monaco-list.list_id_1:focus .monaco-list-row {
+  padding: 15px;
 }
