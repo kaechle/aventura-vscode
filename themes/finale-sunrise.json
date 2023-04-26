@@ -3,8 +3,9 @@
 	"type": "light", 
 	"colors": {
 
-		"window.activeBorder": "#fcfcfc",
-		"window.inactiveBorder": "#fcfcfc",
+		"window.activeBorder": "#757575",
+		"window.inactiveBorder": "#757575",
+
 		"activityBar.background": "#f6f6f6",
 		"activityBar.border": "#dedede",
 		"activityBar.foreground": "#6a6a6a",
@@ -16,7 +17,7 @@
 		"list.activeSelectionBackground": "#3a77dd",
 		"list.activeSelectionForeground": "#ffffff",
 		"list.inactiveSelectionBackground": "#d8d8d8",
-		"list.inactiveSelectionForeground": "#091315",
+		"list.inactiveSelectionForeground": "#aeaeae",
 		"list.hoverBackground": "#00000000",
 
     "badge.background": "#3478f6",
@@ -34,7 +35,6 @@
 		"editor.selectionHighlightBackground": "#636f8380",
 		"editor.wordHighlightBackground": "#636f8380",
 		"editor.wordHighlightStrongBackground": "#636f8380",
-		"editorGroup.border": "#00000000",
 
 		"editorError.border": "#38393a88",
 		"editorError.foreground": "#aa534c",
@@ -47,11 +47,11 @@
 		"breadcrumb.focusForeground": "#272727",
 		"breadcrumb.activeSelectionForeground": "#272727",
 
+		"editorGroup.border": "#00000000",
 		"editorGroupHeader.noTabsBackground": "#ffffff",
 		"editorGroupHeader.tabsBackground": "#ffffff",
 		"editorGroupHeader.tabsBorder": "#e5e5e5",
 		"editorGroupHeader.border": "#e5e5e5",
-
     "tab.activeBorderTop": "#d6e6fd",
 		"tab.activeBackground": "#d6e6fd",
 		"tab.activeBorder": "#e5e5e5",
@@ -63,7 +63,6 @@
 
 		"editorHint.border": "#38393a88",
 		"editorHint.foreground": "#478cd6a4",
-
 		"editorInfo.border": "#38393a88",
 		"editorInfo.foreground": "#4da178a4",
 
@@ -74,14 +73,12 @@
 
 		"editorWidget.border": "#48484800",
 		"widget.border": "#dddddd00",
-
+		"widget.shadow": "#11111122",
 		"editorHoverWidget.background": "#f0f0f0",
 		"editorHoverWidget.border": "#bebac1",
 		"editorHoverWidget.foreground": "#3b3b3b",
 		"editorHoverWidget.highlightForeground": "#ff0000",
 		"editorHoverWidget.statusBarBackground": "#ff0000",
-		"widget.shadow": "#11111122",
-
 		"editorWidget.background": "#00000000",
 		"editorSuggestWidget.background": "#f0f0f0",
 		"editorSuggestWidget.border": "#bebebe",
@@ -103,11 +100,8 @@
 		"scrollbarSlider.hoverBackground": "#11111100",
 		"scrollbarSlider.activeBackground": "#11111100",
 
-		"selection.background": "#b9e9fa",
-
 		"sideBar.background": "#f6f6f6",
 		"sideBar.border": "#e5e5e5",
-		"sideBar.foreground": "#1f292e",
 		"sideBarSectionHeader.border": "#dedede",
 		"sideBarSectionHeader.background": "#f6f6f600",
 		"sideBarSectionHeader.foreground": "#7c7c7c",
