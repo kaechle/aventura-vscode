@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>doc_dark</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="doc_dark">
+            <rect id="Rectangle" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="32" height="32"></rect>
+            <g id="Group-14" transform="translate(4.000000, 2.500000)">
+                <path d="M0,23.0583546 C0,25.6903307 1.46967819,27 4.42329506,27 L19.5766173,27 C22.5302634,27 24,25.6903307 24,23.0583546 L24,3.95429588 C24,1.3348929 22.5302634,0 19.5766173,0 L4.42329506,0 C1.46967819,0 0,1.3348929 0,3.95429588 L0,23.0583546 Z" id="Shape-Copy" fill="#5A5A5A" fill-rule="nonzero"></path>
+                <g id="Group-13" transform="translate(3.000000, 4.000000)" fill="#D2D2D2">
+                    <rect id="Rectangle-Copy-2" x="0" y="4.5" width="18" height="2" rx="1"></rect>
+                    <rect id="Rectangle-Copy-3" x="0" y="9" width="10.8" height="2" rx="1"></rect>
+                    <rect id="Rectangle-Copy" x="0" y="0" width="14.4" height="2" rx="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>folder copy 2</title>
+<svg width="29.090909px" height="23.1404958px" viewBox="0 0 29.090909 23.1404958" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>folder_dark</title>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="folder-copy-2" style="mix-blend-mode: normal;">
-            <rect id="Rectangle" x="0" y="0" width="44" height="44"></rect>
-            <g id="Group-7" transform="translate(2.000000, 6.000000)" fill="#5B8CB1">
-                <path d="M0,3 C-2.02906125e-16,1.34314575 1.34314575,3.04359188e-16 3,0 L14,0 C16.110038,-3.87607692e-16 17.9148022,1.30703234 18.6488366,3.15564092 L37,3.15552216 C38.6568542,3.15552216 40,4.49866791 40,6.15552216 L40,7.15552216 L0,7.15552216 L0,3 Z" id="Combined-Shape" fill-opacity="0.6"></path>
-                <path d="M0,8.81818182 L40,8.81818182 L40,28.8181818 C40,30.4750361 38.6568542,31.8181818 37,31.8181818 L3,31.8181818 C1.34314575,31.8181818 6.46995335e-16,30.4750361 0,28.8181818 L0,8.81818182 L0,8.81818182 Z" id="Rectangle"></path>
+        <g id="folder_dark" style="mix-blend-mode: normal;" transform="translate(-1.000000, -4.000000)">
+            <rect id="Rectangle" x="0" y="0" width="32" height="32"></rect>
+            <g id="Group-7" transform="translate(1.000000, 4.000000)" fill="#70A3CC">
+                <path d="M8.81818177,0 C10.5825186,-8.91580941e-16 12.1334174,0.913837099 13.0233771,2.29401034 L26.1818181,2.2949252 C27.7310844,2.2949252 28.9974892,3.5059991 29.0859706,5.03308491 L29.090909,5.2040161 L0,5.2040161 L0,2.2949252 L0.0835529642,2.29396599 C0.401044193,0.977795979 1.58633385,2.59686258e-16 3,0 L8.81818177,0 Z" id="Combined-Shape" fill-opacity="0.6"></path>
+                <path d="M0,6.41322312 L29.090909,6.41322312 L29.090909,20.1404958 C29.090909,21.79735 27.7477632,23.1404958 26.090909,23.1404958 L3,23.1404958 C1.34314575,23.1404958 6.46995335e-16,21.79735 0,20.1404958 L0,6.41322312 L0,6.41322312 Z" id="Rectangle"></path>
             </g>
         </g>
     </g>

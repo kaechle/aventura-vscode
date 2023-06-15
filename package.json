@@ -4,7 +4,7 @@
   "description": "A custom theme for Visual Studio Code on macOS",
   "version": "1.0.0",
   "engines": {
-    "vscode": "^1.75.0"
+    "vscode": "^1.73.0"
   },
   "categories": [
     "Themes"
@@ -23,11 +23,22 @@
       }
     ],
     "iconThemes": [
-			{
-				"id": "finale-icons",
-				"label": "Finale Icons",
-				"path": "./icons/finale-icons.json"
-			}
-		]
+      {
+        "id": "finale-icons",
+        "label": "Finale Icons",
+        "path": "./icons/finale-icons.json"
+      }
+    ]
+  },
+  "prettier": {
+    "trailingComma": "none",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 80,
+    "arrowParens": "always"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.23"
   }
 }
