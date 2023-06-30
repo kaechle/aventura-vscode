@@ -1,0 +1,808 @@
+* {
+-webkit-font-smoothing: subpixel-antialiased !important;
+}
+
+.monaco-toolbar {
+color: #999999 !important;
+}
+
+#workbench\.parts\.auxiliarybar
+> div.composite.title
+> div.composite-bar.panel-switcher-container
+> div
+> ul
+> li.action-item.icon.checked
+> a {
+color: #739ee1 !important;
+}
+
+#workbench\.parts\.editor > div.content.empty,
+#workbench\.parts\.editor
+> div.content.empty
+> div
+> div
+> div
+> div
+> div.monaco-scrollable-element.mac
+> div.split-view-container
+> div
+> div {
+background-color: transparent !important;
+}
+
+/* layout */
+div.monaco-grid-view
+> div
+> div
+> div.monaco-scrollable-element.mac
+> div.split-view-container
+> div:nth-child(3) {
+top: 0 !important;
+}
+
+div.monaco-grid-view
+> div
+> div
+> div.monaco-scrollable-element.mac
+> div.split-view-container
+> div:nth-child(3)
+> div {
+height: calc(100% + 38px) !important;
+}
+
+/* titlebar */
+
+body > div.file-icons-enabled.border.enable-motion.monaco-workbench.mac.chromium.nopanel.nostatusbar.macos-bigsur-or-newer.vs-dark.undefined_publisher-aventura-themes-aventura-borealis-json > div.monaco-grid-view > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) {
+  z-index: 100;
+}
+
+
+
+.part.titlebar {
+height: 38px !important;
+z-index: 50;
+}
+
+div.monaco-grid-view
+> div
+> div
+> div.monaco-scrollable-element.mac
+> div.split-view-container
+> div:nth-child(3)
+> div
+> div {
+margin-top: 38px !important;
+}
+
+.monaco-workbench.mac .part.titlebar > .titlebar-container {
+border-bottom: 1px solid #111111;
+}
+
+/* sidebars */
+.monaco-workbench .part > .title > .title-actions {
+height: 27px !important;
+}
+div.monaco-grid-view
+> div
+> div
+> div.monaco-scrollable-element.mac
+> div.split-view-container
+> div:nth-child(3)
+> div
+> div
+> div.monaco-scrollable-element.mac
+> div.split-view-container
+> div:nth-child(2),
+div.monaco-grid-view
+> div
+> div
+> div.monaco-scrollable-element.mac
+> div.split-view-container
+> div:nth-child(3)
+> div
+> div
+> div.monaco-scrollable-element.mac
+> div.split-view-container
+> div:nth-child(4) {
+z-index: 10;
+}
+
+/* tabs */
+.tabs-border-bottom > div.editor-actions > div > div > ul > li:nth-child(3) > div > div > a:before {
+  content: '\ebeb';
+}
+
+.editor .tabs-and-actions-container, .tabs-and-actions-container > *, .tabs-container, .tabs-container > *, .tabs-container > .tab .monaco-icon-label,
+.breadcrumbs-control .monaco-icon-label, .tab .monaco-icon-label:before, .breadcrumbs-control .monaco-icon-label:before {
+height: 28px !important;
+font-size: 11px !important;
+line-height: 26px !important;
+}
+
+.monaco-action-bar .action-label {
+padding: 1px !important;
+}
+
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.tabs-container
+> .tab
+.tab-label
+a,
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.title-label
+a {
+font-size: 11px !important;
+}
+
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.tabs-breadcrumbs
+.breadcrumbs-control
+.monaco-breadcrumb-item:before {
+width: 8px !important;
+}
+
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.tabs-breadcrumbs
+.breadcrumbs-control,
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.tabs-breadcrumbs
+.breadcrumbs-control
+> *,
+.monaco-breadcrumbs {
+height: 28px !important;
+font-size: 11px !important;
+line-height: 26px !important;
+}
+
+.monaco-breadcrumbs {
+margin-left: 36px;
+}
+
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.tabs-container
+> .tab:after,
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.tabs-container
+> .tab:before {
+content: '|';
+width: 2px;
+height: 15px;
+position: relative;
+font-size: 20px;
+font-weight: 200;
+line-height: 16px;
+color: #4d4d4d;
+overflow: hidden;
+top: 5px;
+left: -1px;
+}
+
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.tabs-container
+> .tab:before {
+left: 22px;
+}
+
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.tabs-container
+> .tab.tab-actions-left {
+flex-direction: row-reverse;
+padding-left: 0;
+padding-right: 20px;
+}
+
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.editor-actions {
+padding: unset !important;
+padding-right: 4px !important;
+}
+
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.title-label
+a,
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title.breadcrumbs
+.breadcrumbs-control
+.monaco-breadcrumb-item:not(.editor) {
+font-family: "'SF Pro Display'", "'open sans'", sans-serif !important;
+font-size: 12px !important;
+}
+
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+> .tabs-and-actions-container,
+.tabs-and-actions-container .monaco-action-bar .actions-container {
+flex-direction: row-reverse;
+}
+
+.editor-actions {
+height: 27px !important;
+}
+
+.monaco-workbench
+.part.editor
+> .content
+.editor-group-container
+> .title
+.editor-actions {
+padding: unset !important;
+padding-right: 3px !important;
+padding-left: 6px !important;
+}
+
+.tabs li.action-item.menu-entry:nth-child(1),
+.tabs li.action-item.menu-entry:nth-child(2) {
+position: absolute;
+top: 32px;
+overflow: visible !important;
+/* z-index: 1; */
+width: 0;
+left: 4px;
+}
+
+.tabs li.action-item.menu-entry:nth-child(2) {
+left: 24px;
+}
+
+/* terminal */
+.monaco-workbench .part.basepanel.bottom {
+display: flex;
+flex-direction: column-reverse;
+}
+
+.monaco-workbench .part.panel.bottom .composite.title {
+border: unset !important;
+}
+
+div#workbench\.parts\.panel {
+height: calc(100% + 38px) !important;
+}
+
+.monaco-workbench
+.part.basepanel
+> .composite.title
+> .panel-switcher-container
+> .monaco-action-bar {
+line-height: 27px;
+height: 27px !important;
+}
+
+.split-view-view.visible:has(> .right) {
+position: absolute;
+top: -39px;
+}
+
+.split-view-view.visible:has(> .left) {
+position: absolute;
+top: -39px;
+}
+
+div.monaco-grid-view
+> div
+> div
+> div.monaco-scrollable-element.mac
+> div.split-view-container
+> div:nth-child(3)
+> div
+> div
+> div.monaco-scrollable-element.mac
+> div.split-view-container
+> div:nth-child(2) {
+border-right: 1px solid #111111 !important;
+}
+
+div.split-view-container
+> div:nth-child(3)
+> div
+> div
+> div.monaco-scrollable-element.mac
+> div.split-view-container
+> div:nth-child(4) {
+background-color: #282828;
+border-left: 1px solid #111111 !important;
+}
+
+div#workbench\.parts\.sidebar,
+div#workbench\.parts\.auxiliarybar {
+margin-top: 38px !important;
+border-top: 1px solid #ffffff1f !important;
+border-right: unset !important;
+border-left: unset !important;
+/* z-index: 6; */
+}
+
+.interactive-item-container {
+padding: 16px 10px !important;
+}
+
+.monaco-editor .overflow-guard {
+border-radius: 5px;
+max-width: 100% !important;
+}
+
+div#workbench\.parts\.titlebar {
+background-color: #393a3add !important;
+border-bottom: unset !important;
+border-left: 1px solid #111111;
+}
+
+.monaco-workbench .part > .title {
+height: 28px;
+border-bottom: 1px solid #ffffff1f;
+}
+
+.monaco-workbench .part > .title > .title-label h2 {
+display: flex;
+align-items: center;
+height: 27px;
+}
+
+.codicon-terminal:before {
+content: '\ea85';
+font-size: 16px;
+}
+
+div.monaco-scrollable-element.mac
+> div.split-view-container
+> div:nth-child(3)
+> div
+> div
+> div.monaco-scrollable-element.mac
+> div.split-view-container
+> div:nth-child(3)
+> div:before {
+position: absolute;
+width: 200%;
+top: -28px;
+height: 28px;
+display: block;
+}
+/* titlebar */
+.command-center > span.search-label {
+line-height: 21px;
+font-size: 12.5px;
+font-weight: 500;
+}
+
+.monaco-workbench
+.part.titlebar
+> .titlebar-container
+> .titlebar-center
+> .window-title
+> .command-center
+.action-item.command-center {
+border: unset !important;
+}
+
+#workbench\.parts\.panel > div.composite.title:has(.sidebar) {
+border-bottom: unset !important;
+height: 28px !important;
+}
+
+.monaco-workbench
+.part
+> .composite.title
+> .title-actions:has(.sidebar) {
+flex: 1;
+padding-left: unset !important;
+position: relative !important;
+width: 0px !important;
+overflow: hidden;
+}
+
+.monaco-workbench
+.part.titlebar
+> .titlebar-container
+> .titlebar-center {
+margin: 0 auto;
+}
+
+.monaco-editor .margin-view-overlays .line-numbers {
+text-align: right !important;
+font-size: 13.5px !important;
+font-family: 'SF Mono' !important;
+letter-spacing: -1px !important;
+font-weight: 350;
+}
+
+.colorpicker-color-decoration {
+border-radius: 2.5px;
+height: 11px;
+width: 11px;
+border: unset !important;
+}
+
+.colorpicker-color-decoration:before {
+content: '.';
+width: 12px;
+color: #00000000;
+display: block;
+position: absolute;
+border-radius: 3.5px;
+height: 12px;
+margin-left: -1px;
+margin-top: -1px;
+box-shadow: inset 0 0 0 0.75px #111111;
+border: 0.75px solid #ddddddaa;
+}
+
+.monaco-tree-type-filter-grab.codicon.codicon-debug-gripper {
+display: none !important;
+}
+
+.split-view-container {
+overflow: visible !important;
+}
+
+.monaco-scrollable-element.mac {
+overflow: visible !important;
+}
+
+/.window-title {
+/* z-index: 10; */
+}
+
+.composite-bar.panel-switcher-container {
+width: 100% !important;
+}
+
+li.action-item.icon {
+padding: unset !important;
+font-size: 10px !important;
+}
+
+.monaco-workbench
+.part.basepanel
+> .composite.title
+> .panel-switcher-container
+> .monaco-action-bar:has(.sidebar) {
+line-height: 27px;
+height: 27px;
+}
+
+.global-actions {
+display: none;
+}
+
+#workbench\.parts\.auxiliarybar
+> div.composite.title
+> div.composite-bar.panel-switcher-container
+> div
+> ul {
+display: flex;
+gap: 12px;
+margin: 0 auto;
+padding: 0;
+height: 100%;
+width: 100%;
+align-items: center;
+justify-content: center;
+}
+
+#workbench\.parts\.titlebar
+> div
+> div.titlebar-right
+> div.layout-controls-container.show-layout-control
+> div
+> div
+> ul
+> li
+> a:before {
+font-size: 21px !important;
+border-bottom: unset;
+}
+
+#workbench\.parts\.titlebar
+> div
+> div.titlebar-right
+> div.layout-controls-container.show-layout-control
+> div
+> div
+> ul {
+padding-right: 0px;
+}
+
+#workbench\.parts\.titlebar
+> div
+> div.titlebar-right
+> div.layout-controls-container.show-layout-control
+> div
+> div
+> ul
+> li
+> .monaco-dropdown {
+display: none;
+}
+
+.monaco-list-row {
+margin: 0 6px;
+width: calc(100% - 12px);
+border-radius: 5px;
+}
+
+.monaco-workbench
+.part
+> .composite.title
+> .title-actions:has(.sidebar) {
+height: 27px !important;
+}
+
+.monaco-tree-type-filter-actionbar {
+display: none !important;
+}
+
+div.monaco-tree-type-filter {
+background-color: unset !important;
+box-shadow: unset !important;
+right: 0 !important;
+top: unset !important;
+bottom: 0 !important;
+width: 100%;
+background: unset;
+margin: 6px;
+padding: 0;
+max-width: 96% !important;
+}
+
+.monaco-hover-widget,
+.editor-widget {
+drop-shadow: 0 0 0.5px #000000 !important;
+box-shadow: inset 0 -0.5px 4px -1px rgb(255 255 255 / 10%) !important;
+padding: 6px 0;
+overflow: hidden;
+}
+
+.scm-view .scm-editor-container:focus-within,
+.scm-editor-container {
+border-radius: 5px !important;
+background: transparent !important;
+border: transparent !important;
+}
+
+canvas.minimap-decorations-layer {
+border-left: 1px solid #3f4242;
+}
+
+/* statusbar */
+div#status\.problems:after {
+content: '|';
+width: 2px;
+height: 14px !important;
+position: relative !important;
+font-size: 16px;
+font-weight: 200;
+line-height: 16px;
+color: #4d4d4d;
+overflow: hidden;
+position: absolute;
+width: 2px;
+height: 10px;
+top: -23px;
+left: -5px;
+}
+
+div.split-view-container > div:has(.statusbar) {
+height: 27px !important;
+top: unset !important;
+font-size: 11px !important;
+}
+
+footer#workbench\.parts\.statusbar {
+height: 27px !important;
+font-size: 11px !important;
+font-weight: 600 !important;
+position: absolute;
+bottom: 0;
+border-bottom: 1px solid black;
+/* z-index: 4; */
+}
+
+/* floating windows */
+
+.quick-input-widget,
+.monaco-workbench .context-view,
+.monaco-hover-widget,
+.editor-widget {
+background-color: #292929cc !important;
+border-top: 1px solid #787c81bb !important;
+border-left: 1px solid #595959dd !important;
+border-right: 1px solid #595959dd !important;
+border-bottom: 1px solid #555452cc !important;
+outline: 0.75px solid #111111;
+backdrop-filter: blur(16px) saturate(1.2);
+}
+
+.monaco-workbench .context-view,
+.monaco-hover-widget,
+.editor-widget {
+box-shadow: 0 4px 6px 0 #11111144 !important;
+border-radius: 8px !important;
+}
+
+.monaco-inputbox,
+.suggest-input-container {
+border-radius: 5px !important;
+border: 0.5px solid #646464 !important;
+background-color: #454545ad !important;
+}
+
+.suggest-input-container:focus-within,
+.monaco-inputbox.idle:focus-within {
+background-color: #262626ad !important;
+border: 0.5px solid #696969 !important;
+}
+
+.find-widget {
+margin-top: 8px !important;
+margin-right: 8px !important;
+border-radius: 5px !important;
+}
+
+.find-widget .monaco-sash.mac.vertical {
+display: none !important;
+}
+
+.monaco-editor .find-widget .button.toggle:hover {
+background-color: unset !important;
+}
+
+/* breadcrumbs */
+.monaco-breadcrumbs-picker .arrow {
+display: none !important;
+}
+
+.monaco-breadcrumbs-picker {
+margin-top: unset !important;
+border-radius: 6px !important;
+padding: 4px;
+}
+a .monaco-breadcrumbs-picker,
+.monaco-breadcrumbs-picker > * {
+background-color: unset !important;
+}
+
+.monaco-breadcrumbs-picker .monaco-list-row {
+margin: unset !important;
+width: 100% !important;
+}
+
+.monaco-breadcrumbs-picker.show-file-icons {
+height: 100% !important;
+overflow: hidden !important;
+}
+
+.breadcrumbs .breadcrumbs-control .monaco-breadcrumb-item:before {
+content: '\ea76';
+height: 28px !important;
+width: auto !important;
+padding: 0 12px;
+}
+
+.codicon-close:before {
+content: '\ea76';
+margin-top: -1px;
+}
+
+.codicon-breadcrumb-separator:before {
+content: '\3009' !important;
+font-weight: 100;
+font-size: 12px !important;
+margin-left: 0;
+display: inline-block;
+width: 4px;
+margin: 0 6px;
+height: 33px;
+line-height: 28px;
+}
+}
+
+.tabs-breadcrumbs .breadcrumbs-control .monaco-breadcrumb-item:before {
+width: 28px !important;
+}
+
+.tabs-breadcrumbs
+.breadcrumbs-control
+.monaco-breadcrumb-item:last-child {
+padding-right: 16px !important;
+margin-bottom: 2px;
+}
+
+.tabs-breadcrumbs .breadcrumbs-control .monaco-icon-label:before {
+height: 28px !important;
+}
+
+/* command palette */
+div.quick-input-widget.show-file-icons
+> div.quick-input-header
+> div.quick-input-and-message
+> div.quick-input-filter
+> div.quick-input-box
+> div
+> div.monaco-inputbox.idle,
+div.quick-input-widget.show-file-icons
+> div.quick-input-header
+> div.quick-input-and-message
+> div.quick-input-filter
+> div.quick-input-box
+> div
+> div.monaco-inputbox.idle:focus-within {
+border: transparent !important;
+background: transparent !important;
+}
+
+.quick-input-header {
+border-bottom: 1px solid #505050;
+}
+
+.quick-input-widget {
+margin-top: 140px;
+border-radius: 6px !important;
+margin-left: -278px;
+box-shadow: 0 24px 24px 8px #1111118d !important;
+}
+
+.quick-input-list .monaco-list-row {
+border-radius: 5px;
+width: 100%;
+margin: unset;
+padding: unset;
+}
+
+//* find widget *//
+.monaco-editor .find-widget .monaco-sash {
+display: none;
+}
+
+.monaco-editor .find-widget .monaco-findInput .input {
+font-size: 12px !important;
+}

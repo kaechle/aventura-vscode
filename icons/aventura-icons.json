@@ -13,26 +13,8 @@
     "_settings_dark": {
       "iconPath": "settings_dark.svg"
     },
-    "_prettier_dark": {
-      "iconPath": "prettier_dark.svg"
-    },
-    "_eslint_dark": {
-      "iconPath": "eslint_dark.svg"
-    },
     "_code_dark": {
       "iconPath": "code_dark.svg"
-    },
-    "_html_dark": {
-      "iconPath": "html_dark.svg"
-    },
-    "_hash_dark": {
-      "iconPath": "hash_dark.svg"
-    },
-    "_book_dark": {
-      "iconPath": "book_dark.svg"
-    },
-    "_zip_dark": {
-      "iconPath": "zip_dark.svg"
     },
     "_image_dark": {
       "iconPath": "image_dark.svg"
@@ -42,9 +24,6 @@
     },
     "_terminal_dark": {
       "iconPath": "terminal_dark.svg"
-    },
-    "_lock_dark": {
-      "iconPath": "lock_dark.svg"
     },
     "_package_dark": {
       "iconPath": "package_dark.svg"
