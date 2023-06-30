@@ -249,6 +249,20 @@
   },
   "tokenColors": [
     {
+      "name": "Punctuation",
+      "scope": [
+        "punctuation",
+        "meta.brace",
+        "meta.delimiter",
+        "meta.separator",
+        "meta.structure.array",
+        "meta.structure.dictionary"
+      ],
+      "settings": {
+        "foreground": "#bdbebf"
+      }
+    },
+    {
       "name": "Constant Character",
       "scope": "constant.character",
       "settings": {
@@ -330,8 +344,6 @@
       "scope": [
         "comment",
         "punctuation.definition.comment",
-        "punctuation.definition.string.begin.python",
-        "punctuation.definition.string.end.python"
       ],
       "settings": {
         "foreground": "#4a4a4a",
@@ -344,7 +356,7 @@
         "string.quoted.docstring.multi"
       ],
       "settings": {
-        "foreground": "#de968765",
+        "foreground": "#6a544a",
         "fontStyle": "italic"
       }
     },
@@ -359,6 +371,8 @@
         "punctuation.definition.string.begin.js",
         "punctuation.definition.string.end.js",
         "string.quoted.single",
+        "string.quoted.single.python",
+        "string.quoted.double.python",
         "string.quoted.double"
       ],
       "settings": {
@@ -381,11 +395,22 @@
       "name": "Constants",
       "scope": [
         "constant",
-        "variable",
-        "constant.other"
+        "constant.other",
+        "source.python",
+        "meta.attribute.python"
       ],
       "settings": {
         "foreground": "#e2e2e2"
+      }
+    },
+    {
+      "name": "Self Variable",
+      "scope": [
+        "variable.language.self"
+      ],
+      "settings": {
+        "foreground": "#e77076",
+        "fontStyle": "italic"
       }
     },
     {
@@ -435,17 +460,26 @@
       "scope": [
         "entity.name.type",
         "support.type",
-        "support.class",
         "support.type.primitive",
         "support.type.builtin",
         "support.type.exception",
-        "entity.name.type.class",
-        "entity.other.attribute-name.class",
-        "entity.other.inherited-class",
         "entity.name.type"
       ],
       "settings": {
         "foreground": "#8474aa"
+      }
+    },
+    {
+      "name": "Classes",
+      "scope": [
+        "entity.name.class",
+        "entity.name.type.class",
+        "entity.other.attribute-name.class",
+        "entity.other.inherited-class",
+        "entity.name.class"
+      ],
+      "settings": {
+        "foreground": "#e2e2e2"
       }
     },
     {
@@ -466,7 +500,7 @@
         "source.js"
       ],
       "settings": {
-        "foreground": "#b5a7d5"
+        "foreground": "#d4b56d"
       }
     },
     {
@@ -483,7 +517,8 @@
       "name": "Methods",
       "scope": [
         "meta.method",
-        "support.function"
+        "support.function",
+        "support.type.exception"
       ],
       "settings": {
         "foreground": "#9d93b5"
@@ -505,7 +540,8 @@
       "scope": [
         "meta.object-literal.key",
         "meta.object.member",
-        "meta.objectliteral"
+        "meta.objectliteral",
+        "support.function.builtin"
       ],
       "settings": {
         "foreground": "#7a8daf"
@@ -589,20 +625,6 @@
       ],
       "settings": {
         "foreground": "#d48790aa"
-      }
-    },
-    {
-      "name": "Punctuation",
-      "scope": [
-        "punctuation",
-        "meta.brace",
-        "meta.delimiter",
-        "meta.separator",
-        "meta.structure.array",
-        "meta.structure.dictionary"
-      ],
-      "settings": {
-        "foreground": "#bdbebf"
       }
     },
     {
@@ -690,6 +712,54 @@
       }
     },
     {
+      "name": "Markdown Punctuation",
+      "scope": [
+        "punctuation.definition.bold.markdown",
+        "punctuation.definition.heading.markdown",
+        "punctuation.definition.italic.markdown",
+        "punctuation.definition.raw.markdown",
+        "punctuation.definition.string.begin.markdown",
+        "punctuation.definition.string.end.markdown",
+        "punctuation.definition.string.markdown",
+        "punctuation.definition.variable.markdown",
+        "punctuation.definition.heading.markdown",
+        "punctuation.definition.constant.markdown",
+        "punctuation.definition.entity.markdown",
+        "punctuation.definition.metadata.markdown",
+        "punctuation.definition.string.markdown",
+        "punctuation.definition.list.markdown",
+        "punctuation.definition.list_item.markdown",
+        "punctuation.definition.bold.markdown",
+        "punctuation.definition.heading.markdown",
+        "punctuation.definition.italic.markdown",
+        "punctuation.definition.raw.markdown",
+        "punctuation.definition.string.begin.markdown",
+        "punctuation.definition.string.end.markdown",
+        "punctuation.definition.string.markdown",
+        "punctuation.definition.variable.markdown",
+        "punctuation.definition.heading.markdown",
+        "punctuation.definition.constant.markdown",
+        "punctuation.definition.entity.markdown",
+        "punctuation.definition.metadata.markdown",
+        "punctuation.definition.string.markdown",
+        "punctuation.definition.link.title.begin.markdown",
+        "punctuation.definition.link.title.end.markdown",
+        "punctuation.definition.link.begin.markdown",
+        "punctuation.definition.link.end.markdown",
+        "punctuation.definition.list_item.markdown",
+      ],
+      "settings": {
+        "foreground": "#585858"
+      },
+    },
+    {
+      "name": "Markup Deleted",
+      "scope": "markup.deleted",
+      "settings": {
+        "foreground": "#BF616A"
+      }
+    },
+    {
       "name": "Markdown",
       "scope": [
         "markdown",
@@ -747,54 +817,6 @@
       ],
       "settings": {
         "foreground": "#757575"
-      }
-    },
-    {
-      "name": "Markdown Punctuation",
-      "scope": [
-        "punctuation.definition.bold.markdown",
-        "punctuation.definition.heading.markdown",
-        "punctuation.definition.italic.markdown",
-        "punctuation.definition.raw.markdown",
-        "punctuation.definition.string.begin.markdown",
-        "punctuation.definition.string.end.markdown",
-        "punctuation.definition.string.markdown",
-        "punctuation.definition.variable.markdown",
-        "punctuation.definition.heading.markdown",
-        "punctuation.definition.constant.markdown",
-        "punctuation.definition.entity.markdown",
-        "punctuation.definition.metadata.markdown",
-        "punctuation.definition.string.markdown",
-        "punctuation.definition.list.markdown",
-        "punctuation.definition.list_item.markdown",
-        "punctuation.definition.bold.markdown",
-        "punctuation.definition.heading.markdown",
-        "punctuation.definition.italic.markdown",
-        "punctuation.definition.raw.markdown",
-        "punctuation.definition.string.begin.markdown",
-        "punctuation.definition.string.end.markdown",
-        "punctuation.definition.string.markdown",
-        "punctuation.definition.variable.markdown",
-        "punctuation.definition.heading.markdown",
-        "punctuation.definition.constant.markdown",
-        "punctuation.definition.entity.markdown",
-        "punctuation.definition.metadata.markdown",
-        "punctuation.definition.string.markdown",
-        "punctuation.definition.link.title.begin.markdown",
-        "punctuation.definition.link.title.end.markdown",
-        "punctuation.definition.link.begin.markdown",
-        "punctuation.definition.link.end.markdown",
-        "punctuation.definition.list_item.markdown",
-      ],
-      "settings": {
-        "foreground": "#585858"
-      },
-    },
-    {
-      "name": "Markup Deleted",
-      "scope": "markup.deleted",
-      "settings": {
-        "foreground": "#BF616A"
       }
     }
   ]
