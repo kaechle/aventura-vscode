@@ -1,0 +1,96 @@
+/* command palette */
+div.quick-input-widget.show-file-icons
+  > div.quick-input-header
+  > div.quick-input-and-message
+  > div.quick-input-filter
+  > div.quick-input-box
+  > div
+  > div.monaco-inputbox.idle,
+div.quick-input-widget.show-file-icons
+  > div.quick-input-header
+  > div.quick-input-and-message
+  > div.quick-input-filter
+  > div.quick-input-box
+  > div
+  > div.monaco-inputbox.idle:focus-within {
+  border: transparent !important;
+  background: transparent !important;
+}
+
+.quick-input-header {
+  border-bottom: 1px solid #505050;
+}
+
+.quick-input-widget {
+  margin-top: 140px;
+  border-radius: 10px !important;
+  margin-left: -278px;
+  box-shadow: 0 24px 24px 8px #1111118d !important;
+}
+
+.quick-input-list .monaco-list-row {
+  border-radius: 5px;
+  width: 100%;
+  margin: unset;
+  padding: unset;
+}
+
+.monaco-editor .find-widget .monaco-sash {
+  display: none;
+}
+
+.monaco-editor .find-widget .monaco-findInput .input {
+  font-size: 12px !important;
+}
+
+.quick-input-widget,
+.monaco-workbench .context-view,
+.monaco-hover-widget,
+.editor-widget,
+.notifications-toasts.visible > div > div {
+  background-color: #2a2a2a9a !important;
+  border-top: 1px solid #787c8166 !important;
+  border-left: 1px solid #59595988 !important;
+  border-right: 1px solid #59595988 !important;
+  border-bottom: 1px solid #55545288 !important;
+  outline: 0.75px solid #111111;
+  backdrop-filter: blur(16px) saturate(1.2);
+}
+
+.notifications-toasts.visible > div > div {
+  border-radius: 8px !important;
+}
+
+.monaco-workbench .context-view,
+.monaco-hover-widget,
+.editor-widget {
+  box-shadow: 0 4px 6px 0 #11111144 !important;
+  border-radius: 8px !important;
+}
+
+.monaco-inputbox,
+.suggest-input-container {
+  border-radius: 5px !important;
+  border: 0.5px solid #646464 !important;
+  background-color: #454545ad !important;
+}
+
+.suggest-input-container:focus-within,
+.monaco-inputbox.idle:focus-within {
+  background-color: #262626ad !important;
+  border: 0.5px solid #696969 !important;
+}
+
+.find-widget {
+  margin-top: 8px !important;
+  margin-right: 8px !important;
+  border-radius: 5px !important;
+}
+
+.find-widget .monaco-sash.mac.vertical {
+  display: none !important;
+}
+
+.monaco-editor .find-widget .button.toggle:hover {
+  background-color: unset !important;
+}

@@ -1,8 +1,8 @@
 {
   "name": "aventura",
   "displayName": "Aventura",
-  "description": "A custom theme for Visual Studio Code on macOS",
-  "version": "1.0.0",
+  "description": "A highly-customized, opinionated theme built for macOS",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.73.0"
   },
@@ -12,24 +12,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Aventura Sunup",
-        "uiTheme": "hc-light",
-        "path": "./themes/aventura-sunup.json"
+        "label": "Aventura Dark Zen",
+        "uiTheme": "vs-dark",
+        "path": "./themes/aventura-dark-zen.json"
       },
       {
-        "label": "Aventura Sundown",
+        "label": "Aventura Light Zen",
         "uiTheme": "vs-dark",
-        "path": "./themes/aventura-sundown.json"
-      },
-      {
-        "label": "Aventura Borealis",
-        "uiTheme": "vs-dark",
-        "path": "./themes/aventura-borealis.json"
-      },
-      {
-        "label": "Aventura",
-        "uiTheme": "vs-dark",
-        "path": "./themes/aventura.json"
+        "path": "./themes/aventura-light-zen.json"
       }
     ],
     "iconThemes": [

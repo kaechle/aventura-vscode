@@ -1,0 +1,75 @@
+.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(3) > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(3) > div > div > div.sash-container > div {
+  margin-top: -30px;
+}
+
+.monaco-workbench .part.basepanel.bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: -6px;
+}
+
+.monaco-workbench .part.panel.bottom .composite.title {
+  border: unset !important;
+}
+
+div#workbench\.parts\.panel {
+  height: calc(100% + 38px) !important;
+}
+
+.monaco-workbench
+  .part.basepanel
+  > .composite.title
+  > .panel-switcher-container
+  > .monaco-action-bar {
+  line-height: 27px;
+  height: 27px !important;
+}
+
+.split-view-view.visible:has(> .right) {
+  position: absolute;
+  top: -39px;
+}
+
+.split-view-view.visible:has(> .left) {
+  position: absolute;
+  top: -39px;
+}
+
+#terminal > div.composite.title > div.title-actions {
+  position: absolute;
+  bottom: 13px !important;
+  right: 0;
+  overflow: visible;
+  height: 30px !important;
+  z-index: 1000;
+}
+
+#terminal > div.composite.title > div.composite-bar.panel-switcher-container {
+  position: absolute;
+  right: 0;
+  width: auto !important;
+}
+
+#terminal > div.composite.title > div.composite-bar.panel-switcher-container > div > ul {
+  flex-direction: column;
+  align-items: end !important;
+  z-index: 1000;
+  position: relative;
+  right: 8px;
+  top: 34px;
+  gap: 6px;
+}
+
+#terminal > div.composite.title > div.composite-bar.panel-switcher-container > div > ul > li {
+  height: auto !important;
+  line-height: 1 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex;
+  align-items: center;
+  font-weight: 500 !important;
+}
+
+.repl .repl-input-wrapper {
+  border-top: unset !important;
+}

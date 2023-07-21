@@ -1,0 +1,79 @@
+/* breadcrumbs */
+.monaco-breadcrumbs-picker .arrow {
+  display: none !important;
+}
+
+.monaco-breadcrumbs-picker {
+  margin-top: unset !important;
+  border-radius: 6px !important;
+  padding: 4px;
+}
+a .monaco-breadcrumbs-picker,
+.monaco-breadcrumbs-picker > * {
+  background-color: unset !important;
+}
+
+.monaco-breadcrumbs-picker .monaco-list-row {
+  margin: unset !important;
+  width: 100% !important;
+}
+
+.monaco-breadcrumbs-picker.show-file-icons {
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+.breadcrumbs .breadcrumbs-control .monaco-breadcrumb-item:before {
+  content: '\ea76';
+  height: 28px !important;
+  width: auto !important;
+  padding: 0 12px;
+}
+
+.codicon-close:before {
+  content: '\ea76';
+  margin-top: -1px;
+}
+
+.codicon-breadcrumb-separator:before {
+  content: '\3009' !important;
+  font-weight: 100;
+  font-size: 12px !important;
+  margin-left: 0;
+  display: inline-block;
+  width: 4px;
+  margin: 0 6px;
+  height: 33px;
+  line-height: 28px;
+}
+
+.tabs-breadcrumbs .breadcrumbs-control .monaco-breadcrumb-item:before {
+  width: 28px !important;
+}
+
+.tabs-breadcrumbs .breadcrumbs-control .monaco-breadcrumb-item:last-child {
+  padding-right: 16px !important;
+  margin-bottom: 2px;
+}
+
+.tabs-breadcrumbs .breadcrumbs-control .monaco-icon-label:before {
+  height: 28px !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .title-label
+  a,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title.breadcrumbs
+  .breadcrumbs-control
+  .monaco-breadcrumb-item:not(.editor) {
+  font-family: "'SF Pro Display'", "'open sans'", sans-serif !important;
+  font-size: 12px !important;
+}

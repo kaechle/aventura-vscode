@@ -1,0 +1,80 @@
+/* tabs */
+.tabs-border-bottom
+  > div.editor-actions
+  > div
+  > div
+  > ul
+  > li:nth-child(3)
+  > div
+  > div
+  > a:before {
+  content: '\ebeb';
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab:after,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab:before {
+  content: '|';
+  width: 2px;
+  height: 15px;
+  position: relative;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 16px;
+  color: #4d4d4d;
+  overflow: hidden;
+  top: 5px;
+  left: -1px;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab:before {
+  left: 22px;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.tab-actions-left {
+  flex-direction: row-reverse;
+  padding-left: 0;
+  padding-right: 20px;
+}
+
+.tab > .tab-actions,
+.tab > .tab-actions > .monaco-action-bar {
+  width: 20px !important;
+}
+
+.tabs li.action-item.menu-entry:nth-child(1),
+.tabs li.action-item.menu-entry:nth-child(2) {
+  position: absolute;
+  top: 32px;
+  overflow: visible !important;
+  /* z-index: 1; */
+  width: 0;
+  left: 4px;
+}
+
+.tabs li.action-item.menu-entry:nth-child(2) {
+  left: 24px;
+}

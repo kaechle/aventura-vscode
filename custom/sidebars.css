@@ -1,0 +1,28 @@
+/* sidebar */
+#workbench\.parts\.auxiliarybar
+  > div.composite.title
+  > div.composite-bar.panel-switcher-container
+  > div
+  > ul
+  > li.action-item.icon.checked
+  > a {
+  color: #739ee1 !important;
+}
+
+#workbench\.parts\.editor > div.content.empty,
+#workbench\.parts\.editor
+  > div.content.empty
+  > div
+  > div
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div
+  > div {
+  background-color: transparent !important;
+}
+
+#workbench\.parts\.auxiliarybar > div.composite.title > div.composite-bar.panel-switcher-container > div > ul > li > a {
+  color: #737576 !important;
+}

@@ -1,0 +1,47 @@
+
+/* statusbar */
+.monaco-workbench .part.statusbar > .items-container > .statusbar-item {
+  margin: 0;
+}
+
+#status\.problems > a {
+  margin-left: 10px;
+}
+
+.monaco-workbench
+  .part.statusbar
+  > .items-container
+  > .statusbar-item.right.last-visible-item {
+  margin-right: 0 !important;
+}
+
+.monaco-workbench
+  .part.statusbar
+  > .items-container
+  > .statusbar-item.right.last-visible-item:before {
+  content: '|';
+  position: absolute;
+  font-size: 19px;
+  font-weight: 200;
+  line-height: 16px;
+  color: #4d4d4d;
+  overflow: hidden;
+  top: 5px;
+  width: 2px;
+  right: 30px;
+  height: 15px;
+}
+
+div.split-view-container > div:has(.statusbar) {
+  height: 27px !important;
+  top: unset !important;
+  font-size: 11px !important;
+}
+
+footer#workbench\.parts\.statusbar {
+  height: 27px !important;
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  position: absolute;
+  bottom: 0;
+}
