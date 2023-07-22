@@ -19,6 +19,14 @@ div#workbench\.parts\.auxiliarybar {
   font-size: 20px !important;
 }
 
+.action-item.icon {
+  color: #737576 !important;
+}
+
+.action-item.icon.checked {
+  color: #849cd7 !important;
+}
+
 .codicon-play:before {
   content: '\25b6';
   font-size: 21px !important;
@@ -102,16 +110,6 @@ div.monaco-grid-view
   > div
   > div {
   background-color: transparent !important;
-}
-
-#workbench\.parts\.auxiliarybar
-  > div.composite.title
-  > div.composite-bar.panel-switcher-container
-  > div
-  > ul
-  > li
-  > a {
-  color: #737576 !important;
 }
 
 a.action-label.activity-workbench-view-extension-github-actions-b427fbcde787edbd6624936bb7ea8b7ee2d528b7.uri-icon {
