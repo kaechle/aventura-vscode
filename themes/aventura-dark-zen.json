@@ -1612,7 +1612,7 @@
     "list.hoverBackground": "#00000000",
     "list.hoverForeground": "#e2e2e3",
     "list.activeSelectionBackground": "#36506e",
-    "list.inactiveSelectionBackground": "#85858520",
+    "list.inactiveSelectionBackground": "#7375771f",
     "list.focusHighlightForeground": "#fbfcff",
     "list.inactiveFocusBackground": "#3f638daa",
     "list.activeSelectionForeground": "#fbfcff",
@@ -1622,7 +1622,7 @@
     "editorGroupHeader.tabsBackground": "#1f1f1f",
     "tab.activeBorder": "#1f1f1f",
     "tab.activeBorderTop": "#11111100",
-    "tab.activeBackground": "#4e6278",
+    "tab.activeBackground": "#354352aa",
     "tab.activeForeground": "#fbfcff",
     "tab.unfocusedActiveBorder": "#373737",
     "tab.unfocusedActiveBorderTop": "#373737",
@@ -1644,7 +1644,7 @@
     "button.hoverBackground": "#3c6595",
     "button.secondaryBackground": "#3c6595",
     "textLink.foreground": "#59768f",
-    "editorLink.activeForeground": "#59768f",
+    "editorLink.activeForeground": "#7c9ddc",
     "selection.background": "#3b556d99",
 
     "editor.inactiveSelectionBackground": "#b1cde220",
@@ -1655,6 +1655,6 @@
     "panelSection.border": "#00000000",
     "panelSectionHeader.border": "#00000000",
     "panelTitle.activeBorder": "#00000000",
-    "panelSectionHeader.background": "#00000000"
+    "panelSectionHeader.background": "#ffffff00"
   }
 }

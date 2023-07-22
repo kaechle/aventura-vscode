@@ -3,9 +3,27 @@ setTimeout(function () {
     .querySelector('div.monaco-scrollable-element.mac > div.split-view-container')
     .appendChild(document.getElementById('workbench.parts.statusbar'))
   document.querySelector('.monaco-workbench .part.basepanel.bottom').id = 'terminal'
-  document.querySelector("#workbench\\.parts\\.titlebar > div > div.titlebar-center > div").id = 'window-title'
-  windowTitleContent = document.querySelector("#workbench\\.view\\.explorer > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div.pane-header.expanded > h3").innerHTML
+  document.querySelector('#workbench\\.parts\\.titlebar > div > div.titlebar-center > div').id =
+    'window-title'
+  windowTitleContent = document.querySelector(
+    '#workbench\\.view\\.explorer > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(1) > div > div.pane-header.expanded > h3'
+  ).innerHTML
 
+  // const hardcodedStyles = document.querySelector('.pane-header')
+  // hardcodedStyles.forEach((element) => {
+  //   element.removeAttribute('style')
+  // })
+
+  // const headers =
+  //   sidebar.children[1].children[1].children[0].children[0].children[1].children[0].children
+
+  // const setHeaders = () => {
+  //   const top = 0
+  //   headers.forEach((element) => {
+  //     element.attribute.style = `height: 28px; top: ${top}px;`
+  //     top += 28
+  //   })
+  // }
 
   const windowTitle = document.getElementById('window-title')
   windowTitle.innerHTML = windowTitleContent
@@ -51,19 +69,18 @@ setTimeout(function () {
 }, 6000)
 
 setTimeout(function () {
-  document.querySelector("#workbench\\.parts\\.sidebar > div.composite.title").innerHTML = ''
+  document.querySelector('#workbench\\.parts\\.sidebar > div.composite.title').innerHTML = ''
   document.querySelector('#workbench\\.parts\\.sidebar > div.composite.title').id = 'newActivitybar'
 
   const newActivitybar = document.getElementById('newActivitybar')
 
-  document.querySelector("#anweber\\.statusbar-commands\\.sbc_explorer").id = 'explorer-button'
-  document.querySelector("#anweber\\.statusbar-commands\\.sbc_debug").id = 'debug-button'
-  document.querySelector("#anweber\\.statusbar-commands\\.sbc_extensions").id = 'extensions-button'
+  document.querySelector('#anweber\\.statusbar-commands\\.sbc_explorer').id = 'explorer-button'
+  document.querySelector('#anweber\\.statusbar-commands\\.sbc_debug').id = 'debug-button'
+  document.querySelector('#anweber\\.statusbar-commands\\.sbc_extensions').id = 'extensions-button'
 
   const activityBarExplorerBtn = document.getElementById('explorer-button')
   const activityBarDebugBtn = document.getElementById('debug-button')
   const activityBarExtensionsBtn = document.getElementById('extensions-button')
-
 
   document.getElementById('workbench.view.debug')
   document.getElementById('workbench.view.extensions')
@@ -92,8 +109,7 @@ setTimeout(function () {
     }
   }
 
-  activityBarExplorerBtn.addEventListener("click", activeIconColor, false)
-  activityBarDebugBtn.addEventListener("click", activeIconColor, false)
-  activityBarExtensionsBtn.addEventListener("click", activeIconColor, false)
-
+  activityBarExplorerBtn.addEventListener('click', activeIconColor, false)
+  activityBarDebugBtn.addEventListener('click', activeIconColor, false)
+  activityBarExtensionsBtn.addEventListener('click', activeIconColor, false)
 }, 7000)

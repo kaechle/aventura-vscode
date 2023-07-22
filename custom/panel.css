@@ -1,4 +1,15 @@
-.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(3) > div > div > div.monaco-scrollable-element.mac > div.split-view-container > div:nth-child(3) > div > div > div.sash-container > div {
+.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div:nth-child(3)
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div:nth-child(3)
+  > div
+  > div
+  > div.sash-container
+  > div {
   margin-top: -30px;
 }
 
@@ -25,7 +36,7 @@ div#workbench\.parts\.panel {
   height: 27px !important;
 }
 
-.split-view-view.visible:has(> .right) {
+/* .split-view-view.visible:has(> .right) {
   position: absolute;
   top: -39px;
 }
@@ -33,7 +44,7 @@ div#workbench\.parts\.panel {
 .split-view-view.visible:has(> .left) {
   position: absolute;
   top: -39px;
-}
+} */
 
 #terminal > div.composite.title > div.title-actions {
   position: absolute;
@@ -50,7 +61,11 @@ div#workbench\.parts\.panel {
   width: auto !important;
 }
 
-#terminal > div.composite.title > div.composite-bar.panel-switcher-container > div > ul {
+#terminal
+  > div.composite.title
+  > div.composite-bar.panel-switcher-container
+  > div
+  > ul {
   flex-direction: column;
   align-items: end !important;
   z-index: 1000;
@@ -60,7 +75,12 @@ div#workbench\.parts\.panel {
   gap: 6px;
 }
 
-#terminal > div.composite.title > div.composite-bar.panel-switcher-container > div > ul > li {
+#terminal
+  > div.composite.title
+  > div.composite-bar.panel-switcher-container
+  > div
+  > ul
+  > li {
   height: auto !important;
   line-height: 1 !important;
   margin: 0 !important;

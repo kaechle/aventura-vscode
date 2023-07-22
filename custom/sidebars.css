@@ -1,5 +1,86 @@
 /* sidebar */
-#workbench\.parts\.auxiliarybar
+div#workbench\.parts\.sidebar,
+div#workbench\.parts\.auxiliarybar {
+  border-top: 1px solid #ffffff0f !important;
+  border-right: unset !important;
+  border-left: unset !important;
+  height: 100% !important;
+  margin-top: 34px;
+}
+
+.monaco-pane-view .pane > .pane-header {
+  background-color: #ffffff00 !important;
+  border-top: unset !important;
+  border-bottom: unset !important;
+}
+
+.codicon-panel-left:before,
+.codicon-panel-right:before {
+  font-size: 20px !important;
+}
+
+.codicon-play:before {
+  content: '\25b6';
+  font-size: 21px !important;
+}
+
+#anweber\.statusbar-commands\.sbc_sidebar {
+  position: absolute;
+  top: 10px;
+  left: 76px;
+}
+
+#anweber\.statusbar-commands\.sbc_runpython {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.codicon-tree-item-expanded {
+  color: #9e9e9e !important;
+}
+
+.codicon-tree-item-expanded:focus,
+.codicon-tree-item-expanded:focus-within {
+  color: #e2e2e3 !important;
+}
+
+.open-editors .monaco-list .monaco-list-row {
+  padding-left: unset !important;
+}
+
+div.monaco-grid-view
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div:nth-child(3)
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div:nth-child(2),
+div.monaco-grid-view
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div:nth-child(3)
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div:nth-child(4) {
+  z-index: 10;
+}
+
+#workbench\.views\.service\.auxiliarybar\.9a622c64-67ee-4ad7-989f-6a5894076019
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div
+  #workbench\.parts\.auxiliarybar
   > div.composite.title
   > div.composite-bar.panel-switcher-container
   > div
@@ -23,6 +104,42 @@
   background-color: transparent !important;
 }
 
-#workbench\.parts\.auxiliarybar > div.composite.title > div.composite-bar.panel-switcher-container > div > ul > li > a {
+#workbench\.parts\.auxiliarybar
+  > div.composite.title
+  > div.composite-bar.panel-switcher-container
+  > div
+  > ul
+  > li
+  > a {
   color: #737576 !important;
+}
+
+a.action-label.activity-workbench-view-extension-github-actions-b427fbcde787edbd6624936bb7ea8b7ee2d528b7.uri-icon {
+  background-color: #737576 !important;
+}
+
+a.action-label.activity-workbench-view-extension-github-actions-b427fbcde787edbd6624936bb7ea8b7ee2d528b7.uri-icon {
+  background-color: #739ee1 !important;
+}
+
+/* new activitybar */
+.monaco-workbench .part > .composite.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.monaco-workbench .part > .composite.title > div > a > span {
+  font-size: 15px !important;
+}
+
+div#newActivitybar > * {
+  width: 16px !important;
+  height: 16px !important;
+  display: flex;
+}
+
+.monaco-workbench .part > .composite.title > div > a > span:active {
+  color: #7c9ddc;
 }

@@ -1,5 +1,16 @@
-/* titlebar */
 body
+  > div.file-icons-enabled.border.enable-motion.monaco-workbench.mac.chromium.nopanel.nostatusbar.macos-bigsur-or-newer.vs-dark.undefined_publisher-aventura-themes-aventura-dark-zen-json
+  > div.monaco-grid-view
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div:nth-child(1) {
+  display: none;
+}
+
+titlebar
+  body
   > div.file-icons-enabled.border.enable-motion.monaco-workbench.mac.chromium.nopanel.nostatusbar.macos-bigsur-or-newer.vs-dark.undefined_publisher-aventura-themes-aventura-borealis-json
   > div.monaco-grid-view
   > div
@@ -14,6 +25,10 @@ body
   display: none !important;
 }
 
+.titlebar-center {
+  height: 28px !important;
+}
+
 .window-title {
   padding-left: 8px;
   font-size: 14px !important;
@@ -22,13 +37,13 @@ body
   color: #dbdedf;
   margin-left: 8px !important;
 }
-/*
+
 div#status\.scm\.0 {
   font-size: 12px;
   font-weight: 400;
   height: auto;
   line-height: 1;
-} */
+}
 
 pan.codicon.codicon-git-branch {
   position: absolute;
@@ -74,19 +89,8 @@ div#workbench\.parts\.titlebar {
   height: 27px;
 }
 .part.titlebar {
-  height: 38px !important;
+  height: 28px !important;
   z-index: 50;
-}
-
-div.monaco-grid-view
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(3)
-  > div
-  > div {
-  margin-top: 38px !important;
 }
 
 .command-center > span.search-label {

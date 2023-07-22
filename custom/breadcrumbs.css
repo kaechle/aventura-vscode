@@ -3,6 +3,10 @@
   display: none !important;
 }
 
+.monaco-action-bar .action-item .codicon {
+  height: 30px !important;
+}
+
 .monaco-breadcrumbs-picker {
   margin-top: unset !important;
   border-radius: 6px !important;
@@ -57,7 +61,7 @@ a .monaco-breadcrumbs-picker,
 }
 
 .tabs-breadcrumbs .breadcrumbs-control .monaco-icon-label:before {
-  height: 28px !important;
+  height: 24px !important;
 }
 
 .monaco-workbench
