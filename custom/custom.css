@@ -265,7 +265,11 @@ div.monaco-scrollable-element.mac
   font-size: 13.5px !important;
   font-family: 'SF Mono' !important;
   letter-spacing: -1px !important;
-  font-weight: 350;
+  font-weight: 425;
+}
+
+.monaco-editor .relative-current-line-number {
+  text-align: unset !important;
 }
 
 .colorpicker-color-decoration {

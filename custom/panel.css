@@ -16,7 +16,7 @@
 .monaco-workbench .part.basepanel.bottom {
   display: flex;
   flex-direction: column;
-  margin-top: -6px;
+  margin-top: 6px;
 }
 
 .monaco-workbench .part.panel.bottom .composite.title {

@@ -26,16 +26,17 @@
   .tabs-container
   > .tab:before {
   content: '|';
-  width: 2px;
   height: 15px;
   position: relative;
   font-size: 20px;
-  font-weight: 200;
   line-height: 16px;
-  color: #4d4d4d;
-  overflow: hidden;
-  top: 9px;
+  width: 3px;
+  font-weight: 100;
+  color: #4d4d4dbb;
   left: -1px;
+  top: 7px;
+  z-index: 50000;
+  overflow: visible !important;
 }
 
 .monaco-workbench

@@ -2,9 +2,9 @@
 .monaco-breadcrumbs-picker .arrow {
   display: none !important;
 }
-
-.monaco-action-bar .action-item .codicon {
-  height: 30px !important;
+a.action-label.codicon.codicon-chevron-right,
+a.action-label.codicon.codicon-chevron-left {
+  margin-top: 7px;
 }
 
 .monaco-breadcrumbs-picker {
@@ -36,7 +36,7 @@ a .monaco-breadcrumbs-picker,
 
 .codicon-close:before {
   content: '\ea76';
-  margin-top: -1px;
+  margin-top: -2px;
 }
 
 .codicon-breadcrumb-separator:before {
