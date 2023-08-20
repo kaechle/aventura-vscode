@@ -1,11 +1,38 @@
-
 /* statusbar */
+
+#workbench\.parts\.statusbar {
+  outline: 1px solid #1c1c1c;
+  background-color: #1c1c1c !important;
+  --status-border-top-color: #363636 !important;
+  box-shadow: 0px -1px 0 -1px black;
+}
+
 .monaco-workbench .part.statusbar > .items-container > .statusbar-item {
   margin: 0;
 }
 
 #status\.problems > a {
-  margin-left: 10px;
+  margin-left: unset;
+}
+
+div.split-view-container > div:has(.statusbar) {
+  left: -1px;
+  padding-left: 1px;
+}
+
+.codicon-error,
+.codicon-warning {
+  opacity: 0.7;
+}
+
+.codicon-error:before {
+  content: '\ea87';
+  color: #ef5a69;
+}
+
+.codicon-warning:before {
+  color: #e99e58;
+  content: '\ea6c';
 }
 
 .monaco-workbench
@@ -15,33 +42,17 @@
   margin-right: 0 !important;
 }
 
-.monaco-workbench
-  .part.statusbar
-  > .items-container
-  > .statusbar-item.right.last-visible-item:before {
-  content: '|';
-  position: absolute;
-  font-size: 19px;
-  font-weight: 200;
-  line-height: 16px;
-  color: #4d4d4d;
-  overflow: hidden;
-  top: 5px;
-  width: 2px;
-  right: 30px;
-  height: 15px;
-}
-
 div.split-view-container > div:has(.statusbar) {
-  height: 27px !important;
+  height: 31px !important;
   top: unset !important;
   font-size: 11px !important;
+  bottom: 0;
 }
 
 footer#workbench\.parts\.statusbar {
-  height: 27px !important;
-  font-size: 11px !important;
+  height: 31px !important;
+  font-size: 12px !important;
   font-weight: 600 !important;
   position: absolute;
-  bottom: 0;
+  --window-border-color: #363636;
 }

@@ -4,12 +4,12 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="file_dark">
             <rect id="Rectangle" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="32" height="32"></rect>
-            <g id="Group-14" opacity="0.841076079" transform="translate(5.000000, 3.000000)">
-                <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="22" height="26" rx="2.5"></rect>
-                <g id="Group-13" transform="translate(2.863636, 4.005926)" fill="#3F3F3F">
-                    <rect id="Rectangle-Copy-2" x="0" y="4.50666667" width="15.2727273" height="2.5037037" rx="1.25"></rect>
-                    <rect id="Rectangle-Copy-3" x="0" y="9.01333333" width="9.16363636" height="2.5037037" rx="1.25"></rect>
-                    <rect id="Rectangle-Copy" x="0" y="0" width="12.2181818" height="2.5037037" rx="1.25"></rect>
+            <g id="Group-14" opacity="0.841076079" transform="translate(6, 3)">
+                <rect id="Rectangle" fill="#C9D4DB" fill-rule="nonzero" x="0" y="0" width="20" height="26" rx="2.5"></rect>
+                <g id="Group-13" transform="translate(2.6033, 3.0059)" fill="#3F3F3F">
+                    <rect id="Rectangle-Copy-2" x="0" y="4.0037037" width="14.884298" height="2.3" rx="1"></rect>
+                    <rect id="Rectangle-Copy-3" x="0" y="8.00740741" width="8.9305788" height="2.3" rx="1"></rect>
+                    <rect id="Rectangle-Copy" x="0" y="0" width="11.9074384" height="2.3" rx="1"></rect>
                 </g>
             </g>
         </g>

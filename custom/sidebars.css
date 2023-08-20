@@ -1,143 +1,114 @@
-/* sidebar */
-div#workbench\.parts\.sidebar,
-div#workbench\.parts\.auxiliarybar {
-  border-top: 1px solid #ffffff0f !important;
-  border-right: unset !important;
-  border-left: unset !important;
+/* .monaco-list > .monaco-scrollable-element {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} */
+
+/* .monaco-list-rows {
+  overflow: hidden;
+  left: 0px;
+  top: 0px !important;
+  height: unset !important;
+  flex-grow: 1;
+  display: flex !important;
+} */
+
+.monaco-list-row,
+.monaco-tl-row,
+.open-editor,
+.explorer-folders-view .explorer-item {
+  /* position: static !important; */
+  /* display: flex !important; */
+  /* align-items: center; */
+  /* min-height: 26px !important; */
+  /* height: 26px !important; */
+  /* line-height: 26px !important; */
+  font-size: 13.2px;
+  font-weight: 450;
+  font-family: 'SF Pro Text';
+  cursor: auto;
+}
+
+.monaco-tree-type-filter {
+  position: absolute;
+  width: 96%;
+  max-width: unset !important;
+  top: unset !important;
+  right: unset !important;
+  bottom: 10px;
+  left: 0;
+  background-color: transparent !important;
+  box-shadow: unset !important;
+  display: flex;
+  padding: unset;
+  z-index: 10;
+  margin: 3px 5px !important;
+  border: unset !important;
+  border-radius: unset !important;
+}
+
+.monaco-workbench .part > .title > .title-label {
+  display: none;
+}
+
+.monaco-tl-twistie.force-twistie.collapsible.codicon.codicon-tree-item-expanded {
+  display: none !important;
+}
+
+.monaco-list-row {
+  margin: 0 8px;
+  width: calc(100% - 15px);
+  border-radius: 5px;
+}
+/*
+.monaco-scrollable-element
+  .split-view-container
+  > div:nth-child(1)
+  .pane-body
+  > div.explorer-folders-view.file-icon-themable-tree.show-file-icons
+  > div
+  > div {
+  display: flex !important;
   height: 100% !important;
-  margin-top: 34px;
 }
 
-.monaco-pane-view .pane > .pane-header {
-  background-color: #ffffff00 !important;
-  border-top: unset !important;
-  border-bottom: unset !important;
-}
-
-.codicon-panel-left:before,
-.codicon-panel-right:before {
-  font-size: 20px !important;
-}
-
-.action-item.icon {
-  color: #737576 !important;
-}
-
-.action-item.icon.checked {
-  color: #849cd7 !important;
-}
-
-.codicon-play:before {
-  content: '\25b6';
-  font-size: 21px !important;
-}
-
-#anweber\.statusbar-commands\.sbc_sidebar {
-  position: absolute;
-  top: 10px;
-  left: 76px;
-}
-
-#anweber\.statusbar-commands\.sbc_runpython {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-.codicon-tree-item-expanded {
-  color: #9e9e9e !important;
-}
-
-.codicon-tree-item-expanded:focus,
-.codicon-tree-item-expanded:focus-within {
-  color: #e2e2e3 !important;
+.monaco-list-rows {
+  display: flex !important;
+  flex-direction: column;
 }
 
 .open-editors .monaco-list .monaco-list-row {
   padding-left: unset !important;
 }
 
-div.monaco-grid-view
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(3)
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(2),
-div.monaco-grid-view
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(3)
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(4) {
-  z-index: 10;
+.scm-view .monaco-tl-contents > div {
+  padding-left: 6px;
+  padding-right: unset !important;
 }
 
-#workbench\.views\.service\.auxiliarybar\.9a622c64-67ee-4ad7-989f-6a5894076019
+#list_id_1_3
   > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div
-  #workbench\.parts\.auxiliarybar
-  > div.composite.title
-  > div.composite-bar.panel-switcher-container
-  > div
-  > ul
-  > li.action-item.icon.checked
-  > a {
-  color: #739ee1 !important;
+  > div.monaco-tl-twistie.collapsible.codicon.codicon-tree-item-expanded {
+  padding-left: 4px !important;
 }
 
-#workbench\.parts\.editor > div.content.empty,
-#workbench\.parts\.editor
-  > div.content.empty
-  > div
-  > div
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div
-  > div {
-  background-color: transparent !important;
+#workbench\.parts\.sidebar > div.composite.title > div.title-label > h2 {
+  font-weight: 500;
+} */
+
+div#workbench\.parts\.auxiliarybar {
+  background-color: #232323 !important;
+  border-left: 1px solid #000000 !important;
 }
 
-a.action-label.activity-workbench-view-extension-github-actions-b427fbcde787edbd6624936bb7ea8b7ee2d528b7.uri-icon {
-  background-color: #737576 !important;
+#workbench\.parts\.sidebar {
+  border-right: 1px solid #000000 !important;
 }
 
-a.action-label.activity-workbench-view-extension-github-actions-b427fbcde787edbd6624936bb7ea8b7ee2d528b7.uri-icon {
-  background-color: #739ee1 !important;
-}
-
-/* new activitybar */
-.monaco-workbench .part > .composite.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
-
-.monaco-workbench .part > .composite.title > div > a > span {
-  font-size: 15px !important;
-}
-
-div#newActivitybar > * {
-  width: 16px !important;
-  height: 16px !important;
-  display: flex;
-}
-
-.monaco-workbench .part > .composite.title > div > a > span:active {
-  color: #7c9ddc;
+.monaco-tree-type-filter-grab.codicon.codicon-debug-gripper,
+.monaco-tree-type-filter-actionbar {
+  display: none !important;
 }

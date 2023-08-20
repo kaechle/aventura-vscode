@@ -1,433 +1,103 @@
 * {
-  -webkit-font-smoothing: subpixel-antialiased !important;
+  -webkit-font-smoothing: antialiased !important;
+  cursor: default !important;
 }
 
-.mac {
-  font-family: 'SF Pro Text' !important;
-  font-weight: 500 !important;
-  font-size: 13px !important;
-  color: #dddede;
+html {
+  position: relative !important;
+  height: 100% !important;
 }
 
-.monaco-toolbar {
-  color: #999999 !important;
+.monaco-workbench.border.mac.macos-bigsur-or-newer {
+  border-radius: unset !important;
 }
 
-/* layout */
+#monaco-parts-splash {
+  height: 100vh !important;
+  width: 100vw !important;
+  border-radius: unset !important;
+  --window-border-color: transparent !important;
+}
+
+.monaco-workbench.border.mac {
+  border-radius: unset !important;
+}
+
+.monaco-workbench.border:not(.fullscreen) {
+  box-sizing: unset !important;
+  border: unset !important;
+}
+
+#workbench\.parts\.titlebar,
+.monaco-workbench.mac .part.titlebar {
+  height: 0 !important;
+  display: none !important;
+}
 
 body
-  > div.file-icons-enabled.border.enable-motion.monaco-workbench.mac.chromium.nopanel.nostatusbar.macos-bigsur-or-newer.vs-dark.undefined_publisher-aventura-themes-aventura-dark-zen-json
+  > div.file-icons-enabled.border.enable-motion.monaco-workbench.mac.chromium.macos-bigsur-or-newer.vs-dark.undefined_publisher-aventura-themes-aventura-zen-json.noauxiliarybar,
+body
+  > div.file-icons-enabled.border.enable-motion.monaco-workbench.mac.chromium.nopanel.noauxiliarybar.macos-bigsur-or-newer.vs-dark.undefined_publisher-aventura-themes-aventura-zen-json,
+body
+  > div.file-icons-enabled.border.enable-motion.monaco-workbench.mac.chromium.nopanel.macos-bigsur-or-newer.vs-dark.undefined_publisher-aventura-themes-aventura-zen-json {
+  height: 100% !important;
+}
+
+body,
+body
+  > div.file-icons-enabled.border.enable-motion.monaco-workbench.mac.chromium.nopanel.noauxiliarybar.macos-bigsur-or-newer.vs-dark.undefined_publisher-aventura-themes-aventura-zen-json
+  .monaco-workbench
+  .part.sidebar
+  .title-actions
+  .actions-container {
+  justify-content: flex-end;
+  color: #898c90 !important;
+  height: 100% !important;
+}
+
+body
+  > div.file-icons-enabled.enable-motion.monaco-workbench.mac.chromium.macos-bigsur-or-newer.monaco-font-aliasing-auto.vs-dark.undefined_publisher-aventura-themes-aventura-zen-json.border.nopanel.nostatusbar
   > div.monaco-grid-view
   > div
   > div
   > div.monaco-scrollable-element.mac
   > div.split-view-container
-  > div:nth-child(3) {
-  top: unset !important;
-  height: 100% !important;
+  > div:nth-child(1) {
+  display: none;
 }
-/* body
-  .split-view-container
-  > div:nth-child(3)
-  .split-view-container
-  > .split-view-view {
-  height: calc(100% + 30px) !important;
-} */
 
-/* .monaco-split-view2.vertical
+.monaco-split-view2.horizontal
   > .monaco-scrollable-element
   > .split-view-container
   > .split-view-view {
-  width: 100%;
+  display: flex !important;
+}
+
+.mac:not(:has(.editor)) {
+  font-family: 'SF Pro Display' !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  color: #f8fdfe;
+}
+
+body
+  .monaco-grid-view
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div:nth-child(1) {
   top: 0 !important;
-} */
+  height: 0 !important;
+}
 
-/* div.monaco-grid-view
+body
+  .monaco-grid-view
   > div
   > div
   > div.monaco-scrollable-element.mac
   > div.split-view-container
-  > div:nth-child(3)
-  > div {
-  height: calc(100% + 36px) !important;
-} */
-
-.monaco-action-bar .action-label {
-  padding: 1px !important;
-}
-
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .tabs-container
-  > .tab
-  .tab-label
-  a,
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .title-label
-  a {
-  font-size: 11px !important;
-}
-
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .tabs-breadcrumbs
-  .breadcrumbs-control
-  .monaco-breadcrumb-item:before {
-  width: 8px !important;
-}
-
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .tabs-breadcrumbs
-  .breadcrumbs-control,
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .tabs-breadcrumbs
-  .breadcrumbs-control
-  > *,
-.monaco-breadcrumbs {
-  height: 28px !important;
-  font-size: 11px !important;
-  line-height: 26px !important;
-}
-
-.monaco-breadcrumbs {
-  margin-left: 36px;
-}
-
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .title-label
-  a,
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title.breadcrumbs
-  .breadcrumbs-control
-  .monaco-breadcrumb-item:not(.editor) {
-  font-family: "'SF Pro Display'", "'open sans'", sans-serif !important;
-  font-size: 12px !important;
-}
-
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  > .tabs-and-actions-container,
-.tabs-and-actions-container .monaco-action-bar .actions-container {
-  flex-direction: row-reverse;
-}
-
-.editor-actions {
-  height: 34px !important;
-}
-
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .editor-actions {
-  padding: unset !important;
-  padding-right: 3px !important;
-  padding-left: 6px !important;
-  z-index: 10;
-}
-
-div.monaco-grid-view
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(3)
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(2) {
-  border-right: 1px solid #111111 !important;
-}
-
-div.split-view-container
-  > div:nth-child(3)
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(4) {
-  background-color: #262626;
-  border-left: 1px solid #111111 !important;
-}
-
-.interactive-item-container {
-  padding: 16px 10px !important;
-}
-
-.monaco-editor .overflow-guard {
-  border-radius: 5px;
-  max-width: 100% !important;
-}
-
-div#workbench\.parts\.titlebar {
-  background-color: #373737 !important;
-  border-bottom: unset !important;
-  border-left: 1px solid #111111;
-}
-
-.monaco-workbench .part > .title {
-  height: 28px;
-  border-bottom: 1px solid #ffffff0f;
-}
-
-.monaco-workbench .part > .title > .title-label h2 {
-  display: flex;
-  align-items: center;
-  height: 27px;
-}
-
-.codicon-terminal:before {
-  content: '\ea85';
-  font-size: 16px;
-}
-
-div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(3)
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(3)
-  > div:before {
-  position: absolute;
-  width: 200%;
-  height: 28px;
-  display: block;
-}
-
-/* titlebar */
-.command-center > span.search-label {
-  line-height: 21px;
-  font-size: 12.5px;
-  font-weight: 500;
-}
-
-.monaco-workbench
-  .part.titlebar
-  > .titlebar-container
-  > .titlebar-center
-  > .window-title
-  > .command-center
-  .action-item.command-center {
-  border: unset !important;
-}
-
-#workbench\.parts\.panel > div.composite.title:has(.sidebar) {
-  border-bottom: unset !important;
-  height: 28px !important;
-}
-
-.monaco-workbench .part > .composite.title > .title-actions:has(.sidebar) {
-  flex: 1;
-  padding-left: unset !important;
-  position: relative !important;
-  width: 0px !important;
-  overflow: hidden;
-}
-
-.monaco-workbench .part.titlebar > .titlebar-container > .titlebar-center {
-  margin: 0 auto;
-}
-
-.monaco-editor .margin-view-overlays .line-numbers {
-  text-align: right !important;
-  font-size: 13.5px !important;
-  font-family: 'SF Mono' !important;
-  letter-spacing: -1px !important;
-  font-weight: 425;
-}
-
-.monaco-editor .relative-current-line-number {
-  text-align: unset !important;
-}
-
-.colorpicker-color-decoration {
-  border-radius: 2.5px;
-  height: 11px;
-  width: 11px;
-  border: unset !important;
-}
-
-.colorpicker-color-decoration:before {
-  content: '.';
-  width: 12px;
-  color: #00000000;
-  display: block;
-  position: absolute;
-  border-radius: 3.5px;
-  height: 12px;
-  margin-left: -1px;
-  margin-top: -1px;
-  box-shadow: inset 0 0 0 0.75px #111111;
-  border: 0.75px solid #ddddddaa;
-}
-
-.monaco-tree-type-filter-grab.codicon.codicon-debug-gripper {
-  display: none !important;
-}
-
-.split-view-container {
-  overflow: visible !important;
-}
-
-.monaco-scrollable-element.mac {
-  overflow: visible !important;
-}
-
-/.window-title {
-  /* z-index: 10; */
-}
-
-.composite-bar.panel-switcher-container {
-  width: 100% !important;
-}
-
-li.action-item.icon {
-  padding: unset !important;
-  font-size: 10px !important;
-}
-
-.monaco-workbench
-  .part.basepanel
-  > .composite.title
-  > .panel-switcher-container
-  > .monaco-action-bar:has(.sidebar) {
-  line-height: 27px;
-  height: 27px;
-}
-
-.global-actions {
-  display: none;
-}
-
-#workbench\.parts\.auxiliarybar
-  > div.composite.title
-  > div.composite-bar.panel-switcher-container
-  > div
-  > ul {
-  display: flex;
-  gap: 12px;
-  margin: 0 auto;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-}
-
-#workbench\.parts\.titlebar
-  > div
-  > div.titlebar-right
-  > div.layout-controls-container.show-layout-control
-  > div
-  > div
-  > ul
-  > li
-  > a:before {
-  font-size: 21px !important;
-  border-bottom: unset;
-}
-
-#workbench\.parts\.titlebar
-  > div
-  > div.titlebar-right
-  > div.layout-controls-container.show-layout-control
-  > div
-  > div
-  > ul {
-  padding-right: 0px;
-}
-
-#workbench\.parts\.titlebar
-  > div
-  > div.titlebar-right
-  > div.layout-controls-container.show-layout-control
-  > div
-  > div
-  > ul
-  > li
-  > .monaco-dropdown {
-  display: none;
-}
-
-.monaco-list-row {
-  margin: 0 6px;
-  width: calc(100% - 12px);
-  border-radius: 5px;
-}
-
-.monaco-workbench .part > .composite.title > .title-actions:has(.sidebar) {
-  height: 27px !important;
-}
-
-.monaco-tree-type-filter-actionbar {
-  display: none !important;
-}
-
-div.monaco-tree-type-filter {
-  background-color: unset !important;
-  box-shadow: unset !important;
-  right: 0 !important;
-  top: unset !important;
-  bottom: 0 !important;
-  width: 100%;
-  background: unset;
-  margin: 6px;
-  padding: 0;
-  max-width: 96% !important;
-}
-
-.monaco-hover-widget,
-.editor-widget {
-  drop-shadow: 0 0 0.5px #000000 !important;
-  box-shadow: inset 0 -0.5px 4px -1px rgb(255 255 255 / 10%) !important;
-  padding: 6px 0;
-  overflow: hidden;
-}
-
-.scm-view .scm-editor-container:focus-within,
-.scm-editor-container {
-  border-radius: 5px !important;
-  background: transparent !important;
-  border: transparent !important;
-}
-
-canvas.minimap-decorations-layer {
-  border-left: 1px solid #383838;
-  margin-left: -3px;
-}
-
-.monaco-editor .dirty-diff-glyph {
-  margin-left: -47px !important;
+  > div:nth-child(3) {
+  height: 100% !important;
+  top: 0 !important;
 }

@@ -1,17 +1,47 @@
 /* breadcrumbs */
+.breadcrumbs {
+  font-size: 12px !important;
+}
+
+.monaco-breadcrumbs {
+  background-color: #1d1d1d !important;
+}
+
+.context-view .monaco-list > .monaco-scrollable-element {
+  width: calc(100% - 12px);
+  margin: 6px;
+}
+
 .monaco-breadcrumbs-picker .arrow {
   display: none !important;
 }
-a.action-label.codicon.codicon-chevron-right,
-a.action-label.codicon.codicon-chevron-left {
-  margin-top: 7px;
+
+.tabs-breadcrumbs,
+.monaco-breadcrumbs {
+  height: 30px !important;
+  font-size: 12px !important;
+}
+
+.context-view .monaco-tl-twistie {
+  width: 12px !important;
+  margin-left: -6px;
+}
+
+.breadcrumbs-control .monaco-icon-label,
+.tabs-breadcrumbs .breadcrumbs-control .monaco-icon-label:before {
+  height: 30px !important;
+  line-height: 30px !important;
+}
+
+.breadcrumbs {
+  --title-border-bottom-color: #151515 !important;
 }
 
 .monaco-breadcrumbs-picker {
   margin-top: unset !important;
   border-radius: 6px !important;
-  padding: 4px;
 }
+
 a .monaco-breadcrumbs-picker,
 .monaco-breadcrumbs-picker > * {
   background-color: unset !important;
@@ -39,16 +69,33 @@ a .monaco-breadcrumbs-picker,
   margin-top: -2px;
 }
 
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title.breadcrumbs
+  .breadcrumbs-control
+  .monaco-breadcrumb-item:before,
 .codicon-breadcrumb-separator:before {
   content: '\3009' !important;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 12px !important;
   margin-left: 0;
   display: inline-block;
   width: 4px;
   margin: 0 6px;
-  height: 33px;
+  height: 32px;
   line-height: 28px;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title.breadcrumbs
+  .breadcrumbs-control
+  .monaco-breadcrumb-item:before {
+  margin: unset !important;
 }
 
 .tabs-breadcrumbs .breadcrumbs-control .monaco-breadcrumb-item:before {
@@ -57,11 +104,6 @@ a .monaco-breadcrumbs-picker,
 
 .tabs-breadcrumbs .breadcrumbs-control .monaco-breadcrumb-item:last-child {
   padding-right: 16px !important;
-  margin-bottom: 2px;
-}
-
-.tabs-breadcrumbs .breadcrumbs-control .monaco-icon-label:before {
-  height: 24px !important;
 }
 
 .monaco-workbench
@@ -78,6 +120,74 @@ a .monaco-breadcrumbs-picker,
   > .title.breadcrumbs
   .breadcrumbs-control
   .monaco-breadcrumb-item:not(.editor) {
-  font-family: "'SF Pro Display'", "'open sans'", sans-serif !important;
+  font-family: 'SF Pro Text' !important;
   font-size: 12px !important;
+  font-weight: 500;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title:not(.tabs) {
+  padding-left: 65px !important;
+  background-color: #1c1c1c !important;
+}
+
+.breadcrumbs {
+  --title-border-bottom-color: #363636 !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title.breadcrumbs
+  .breadcrumbs-control,
+#workbench\.parts\.editor
+  > div.content
+  > div
+  > div
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div
+  > div
+  > div.title.show-file-icons.title-border-bottom.breadcrumbs.dirty
+  > div.label-container
+  > div.breadcrumbs-control
+  > div,
+.tabs-breadcrumbs,
+.monaco-breadcrumbs,
+#workbench\.parts\.editor
+  > div.content
+  > div
+  > div
+  > div
+  > div
+  > div.monaco-scrollable-element.mac
+  > div.split-view-container
+  > div
+  > div
+  > div.title.breadcrumbs.show-file-icons.title-border-bottom
+  > div.label-container
+  > div.breadcrumbs-control
+  > div,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-breadcrumbs
+  .breadcrumbs-control {
+  height: 30px !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title:not(.tabs) {
+  padding-left: 65px !important;
 }
