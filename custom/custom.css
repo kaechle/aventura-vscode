@@ -6,6 +6,7 @@
 html {
   position: relative !important;
   height: 100% !important;
+  top: -35px !important;
 }
 
 .monaco-workbench.border.mac.macos-bigsur-or-newer {
@@ -24,46 +25,20 @@ html {
 }
 
 .monaco-workbench.border:not(.fullscreen) {
-  box-sizing: unset !important;
   border: unset !important;
 }
-
+/*
 #workbench\.parts\.titlebar,
 .monaco-workbench.mac .part.titlebar {
   height: 0 !important;
   display: none !important;
 }
 
-body
-  > div.file-icons-enabled.border.enable-motion.monaco-workbench.mac.chromium.macos-bigsur-or-newer.vs-dark.undefined_publisher-aventura-themes-aventura-zen-json.noauxiliarybar,
-body
-  > div.file-icons-enabled.border.enable-motion.monaco-workbench.mac.chromium.nopanel.noauxiliarybar.macos-bigsur-or-newer.vs-dark.undefined_publisher-aventura-themes-aventura-zen-json,
-body
-  > div.file-icons-enabled.border.enable-motion.monaco-workbench.mac.chromium.nopanel.macos-bigsur-or-newer.vs-dark.undefined_publisher-aventura-themes-aventura-zen-json {
+body .noauxiliarybar,
+body .nopanel.noauxiliarybar,
+body .nopanel {
   height: 100% !important;
-}
-
-body,
-body
-  > div.file-icons-enabled.border.enable-motion.monaco-workbench.mac.chromium.nopanel.noauxiliarybar.macos-bigsur-or-newer.vs-dark.undefined_publisher-aventura-themes-aventura-zen-json
-  .monaco-workbench
-  .part.sidebar
-  .title-actions
-  .actions-container {
-  justify-content: flex-end;
-  color: #898c90 !important;
-  height: 100% !important;
-}
-
-body
-  > div.file-icons-enabled.enable-motion.monaco-workbench.mac.chromium.macos-bigsur-or-newer.monaco-font-aliasing-auto.vs-dark.undefined_publisher-aventura-themes-aventura-zen-json.border.nopanel.nostatusbar
-  > div.monaco-grid-view
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(1) {
-  display: none;
+  position: relative !important;
 }
 
 .monaco-split-view2.horizontal
@@ -71,7 +46,7 @@ body
   > .split-view-container
   > .split-view-view {
   display: flex !important;
-}
+} */
 
 .mac:not(:has(.editor)) {
   font-family: 'SF Pro Display' !important;
@@ -79,7 +54,7 @@ body
   font-size: 13px !important;
   color: #f8fdfe;
 }
-
+/*
 body
   .monaco-grid-view
   > div
@@ -100,4 +75,4 @@ body
   > div:nth-child(3) {
   height: 100% !important;
   top: 0 !important;
-}
+} */

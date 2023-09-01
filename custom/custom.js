@@ -1,6 +1,6 @@
 setTimeout(function () {
-  window.outerHeight = 1150
-  window.innerHeight = 1150
+  window.outerHeight = 1158
+  window.innerHeight = 1158
 
   document.querySelector('.monaco-workbench .part.basepanel.bottom').id =
     'terminal'
@@ -28,40 +28,29 @@ setTimeout(function () {
 
   const windowFix = new ResizeObserver((entries) => {
     for (const entry of entries) {
-      if (
-        entry.target === sidebar ||
-        entry.target === editor ||
-        entry.target === terminal ||
-        entry.target === tabs ||
-        entry.target === breadcrumbs
-      ) {
+      if (entry.target === editor) {
         statusbar.style.left = window.getComputedStyle(editor).left
         statusbar.style.width = window.getComputedStyle(editor).width
+      }
 
-        if (tabs == true && window.getComputedStyle(sidebar).width == 'auto') {
-          tabs.style.paddingLeft = '75px'
-        } else if (
-          tabs != true &&
-          window.getComputedStyle(sidebar).width == 'auto'
-        ) {
-          breadcrumbs.style.paddingLeft = '75px'
-        } else {
+      if (entry.target === sidebar) {
+        if (sidebar.style.width != 'auto') {
           tabs.style.paddingLeft = '0'
           breadcrumbs.style.paddingLeft = '0'
-        }
-
-        if (window.getComputedStyle(terminal).height !== 'auto') {
-          statusbar.style.bottom = window.getComputedStyle(terminal).height
-          statusbar.style.marginBottom = '166px'
+        } else if (window.getComputedStyle(tabs)) {
+          tabs.style.paddingLeft = '75px'
         } else {
-          statusbar.style.bottom = '0'
-          statusbar.style.marginBottom = '0'
+          breadcrumbs.style.paddingLeft = '75px'
         }
+      }
+
+      if (entry.target === terminal) {
+        statusbar.style.marginBottom = window.getComputedStyle(terminal).height
       }
     }
   })
-  windowFix.observe(sidebar)
+
   windowFix.observe(editor)
-  windowFix.observe(tabs)
-  windowFix.observe(breadcrumbs)
+  windowFix.observe(sidebar)
+  windowFix.observe(terminal)
 }, 6000)

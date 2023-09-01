@@ -130,7 +130,7 @@ a .monaco-breadcrumbs-picker,
   > .content
   .editor-group-container
   > .title:not(.tabs) {
-  padding-left: 65px !important;
+  /* padding-left: 65px !important; */
   background-color: #1c1c1c !important;
 }
 
@@ -182,12 +182,4 @@ a .monaco-breadcrumbs-picker,
   .tabs-breadcrumbs
   .breadcrumbs-control {
   height: 30px !important;
-}
-
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title:not(.tabs) {
-  padding-left: 65px !important;
 }

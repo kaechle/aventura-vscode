@@ -1,39 +1,7 @@
-.part.panel.basepanel.bottom {
-  background-color: #1c1c1c !important;
-}
-
-#terminal,
-.monaco-workbench .pane-body.integrated-terminal {
-  background-color: #1c1c1c !important;
-}
-
-.panel.basepanel .composite-bar.panel-switcher-container {
-  position: absolute !important;
-  right: 0;
-}
-
-.panel.basepanel > div.composite.title > .title-actions {
-  padding-left: 5px;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.panel.basepanel > div.composite.title > div.global-actions > div > div > ul {
-  display: none;
-}
-
-#terminal,
-.monaco-workbench .pane-body.integrated-terminal {
-  background-color: #1c1c1c !important;
-  --vscode-panel-background: #1c1c1c;
-  --vscode-panelSectionHeader-border: #353535 !important;
-  --vscode-panelTitle-activeForeground: #737576 !important;
-  --vscode-panelTitle-inactiveForeground: #737576 !important;
-}
-
-.monaco-workbench .pane-body.integrated-terminal .xterm,
-.monaco-workbench .terminal-editor .xterm {
-  right: -20px !important;
-  background-color: #1c1c1c !important;
+.monaco-sash.mac.horizontal {
+  cursor: row-resize;
+  cursor: row-resize !important;
+  z-index: 100 !important;
+  margin-top: -30px !important;
+  height: 4px !important;
 }

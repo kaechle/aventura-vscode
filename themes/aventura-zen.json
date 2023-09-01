@@ -38,7 +38,6 @@
         "entity.name.tag.css",
         "entity.name.tag.html",
         "meta.tag.metadata.meta.void.html",
-        "text.html.derivative"
       ],
       "settings": {
         "foreground": "#79c6be",
@@ -49,10 +48,18 @@
       "scope": [
         "entity.name.tag.html",
         "meta.tag.metadata.meta.void.html",
-        "text.html.derivative"
       ],
       "settings": {
         "foreground": "#79c6be",
+        "fontStyle": ""
+      }
+    },
+    {
+      "scope": [
+        "entity.other.attribute-name.html",
+      ],
+      "settings": {
+        "foreground": "#79c6beb0",
         "fontStyle": ""
       }
     },
@@ -101,7 +108,10 @@
         "entity.name.function",
         "entity.name.function.python",
         "meta.function.python",
-        "support.function.magic.python"
+        "support.function.magic.python",
+        "keyword.control.jinja",
+        "meta.scope.jinja.tag",
+        "text.html.jinja"
       ],
       "settings": {
         "foreground": "#dda085",
@@ -123,10 +133,8 @@
         "meta.function-call.arguments",
         "meta.function-call.arguments",
         "meta.function-call.arguments.python",
-        "entity.other.attribute-name.html",
         "meta.attribute.charset.html",
         "meta.tag.metadata.meta.void.html",
-        "text.html.derivative",
         "meta.tag.metadata.meta.void.html"
       ],
       "settings": {
@@ -145,7 +153,9 @@
         "meta.property-list.css",
         "variable.parameter.function.language.special.cls.python",
         "variable.parameter.function.language.python",
-        "meta.function.parameters.python"
+        "meta.function.parameters.python",
+        "variable.other.jinja",
+        "meta.scope.jinja.variable"
       ],
       "settings": {
         "foreground": "#dee3edc0",
@@ -166,10 +176,12 @@
     {
       "scope": [
         "source",
+        "text.html.derivative",
         "punctuation.section.function.begin.python",
         "meta.function.python",
         "source.python",
         "entity.name.function.decorator",
+        "entity.other.jinja.delimiter.tag",
         "meta.function.decorator",
         "punctuation.separator.array.json",
         "punctuation.separator.dict",
@@ -192,6 +204,16 @@
       },
     },
     {
+      "scope": [
+        "string.quoted.docstring.multi.python",
+        "text.html.jinja",
+      ],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "#dee3ed90"
+      }
+    },
+    {
       "name": "Comments",
       "scope": [
         "comment",
@@ -199,7 +221,8 @@
         "punctuation.definition.comment",
         "comment.line.double-slash",
         "comment.line.double-slash",
-        "string.quoted.docstring.multi.python"
+        "string.quoted.docstring.multi.python",
+        "text.html.jinja",
       ],
       "settings": {
         "fontStyle": "italic",
@@ -237,8 +260,8 @@
     "sideBySideEditor.verticalBorder": "#242424",
     "editorLineNumber.activeForeground": "#dee3ed90",
     "editorLineNumber.foreground": "#dee3ed30",
-    "editorIndentGuide.background1": "#2b2b2b00",
-    "editorIndentGuide.activeBackground1": "#3a494e",
+    "editorIndentGuide.background1": "#5d5e6201",
+    "editorIndentGuide.activeBackground1": "#5d5e625f",
     "window.inactiveBorder": "#242424",
     "editorGroupHeader.noTabsBackground": "#242424",
     "tab.border": "#282828",
@@ -309,6 +332,7 @@
     "statusBar.debuggingBorder": "#292929",
     "statusBar.noFolderBorder": "#292929",
     "terminal.foreground": "#d6d8dd",
+    "terminal.background": "#1c1c1c",
     "terminal.ansiBlack": "#363636",
     "terminal.ansiBrightBlack": "#5e5e5e",
     "terminal.ansiBlue": "#88a5c0",
@@ -464,11 +488,11 @@
     "editor.inactiveSelectionBackground": "#b1cde220",
     "editorCursor.background": "#383b3f",
     "editorCursor.foreground": "#a8bade",
-    "panel.background": "#202020",
+    "panel.background": "#1c1c1c",
     "panel.border": "#00000000",
     "panelSection.border": "#00000000",
     "panelSectionHeader.border": "#00000000",
     "panelTitle.activeBorder": "#00000000",
-    "panelSectionHeader.background": "#ffffff00"
+    "panelSectionHeader.background": "#00000000"
   }
 }
