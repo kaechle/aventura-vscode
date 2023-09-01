@@ -27,7 +27,12 @@ Before installing Aventura, ensure you have the Custom CSS and JS Loader and Vib
     "file:///path-to-your-extensions/aventura-vscode/custom/custom.js",
     "file:///path-to-your-extensions/aventura-vscode/custom/custom.css",
     "file:///path-to-your-extensions/aventura-vscode/custom/tabs.css",
-    // ... paths to the other custom css files
+    "file:///path-to-your-extensions/aventura-vscode/custom/breadcrumbs.css",
+    "file:///path-to-your-extensions/aventura-vscode/custom/floats.css",
+    "file:///path-to-your-extensions/aventura-vscode/custom/panel.css",
+    "file:///path-to-your-extensions/aventura-vscode/custom/statusbar.css",
+    "file:///path-to-your-extensions/aventura-vscode/custom/editor.css",
+    "file:///path-to-your-extensions/aventura-vscode/custom/titlebar.css",
 ],
 "vscode_vibrancy.type": "sidebar",
 "vscode_vibrancy.theme": "Dark (Only Subbar)",
