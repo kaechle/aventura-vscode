@@ -1,10 +1,48 @@
-.tab {
-  border-left: unset !important;
-  border-right: 1px solid #1d1d1d !important;
+@media (prefers-color-scheme: light) {
+  div#tabs {
+    --tabs-border-bottom-color: #e6e6e6 !important;
+  }
+
+  .title.tabs.show-file-icons.title-border-bottom {
+    --title-border-bottom-color: #e6e6e6 !important;
+  }
+
+  .title.title-border-bottom {
+    background-color: #f6f6f6 !important;
+  }
+
+  .tab {
+    border-right: 1px solid #dfdfdf !important;
+    background-color: #f6f6f6 !important;
+    color: #282828 !important;
+  }
 }
 
-.tab.active {
-  filter: contrast(1.1);
+@media (prefers-color-scheme: dark) {
+  .tab {
+    border-right: 1px solid #1d1d1d !important;
+  }
+
+  .tab.active {
+    filter: contrast(1.1);
+  }
+
+  .tabs-container {
+    border-left: unset !important;
+  }
+}
+
+.tab-label > .monaco-icon-label-container::after {
+  display: none !important;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .editor-actions {
+  outline: none !important;
 }
 
 .monaco-workbench

@@ -116,6 +116,7 @@
     "postcss.config.cjs": "_settings_dark",
     "playwright.config.js": "_settings_dark",
     "playwright.config.ts": "_settings_dark",
+    "pyproject.toml": "_settings_dark",
     ".npmrc": "_settings_dark",
     ".prettierrc": "_settings_dark",
     ".prettierignore": "_settings_dark",
@@ -126,6 +127,7 @@
     ".eslintrc.json": "_settings_dark",
     ".editorconfig": "_settings_dark",
     ".gitignore": "_git_dark",
-    ".gitattributes": "_git_dark"
+    ".gitattributes": "_git_dark",
+    ".gitmodules": "_git_dark"
   }
 }

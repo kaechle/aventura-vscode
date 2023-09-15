@@ -1,10 +1,17 @@
-/* breadcrumbs */
-.breadcrumbs {
-  font-size: 12px !important;
+@media (prefers-color-scheme: light) {
+  .monaco-breadcrumbs {
+    background-color: #fdfdfd !important;
+  }
 }
 
-.monaco-breadcrumbs {
-  background-color: #1d1d1d !important;
+@media (prefers-color-scheme: dark) {
+  .monaco-breadcrumbs {
+    background-color: #1d1d1d !important;
+  }
+}
+
+.breadcrumbs {
+  font-size: 12px !important;
 }
 
 .context-view .monaco-list > .monaco-scrollable-element {
@@ -16,6 +23,7 @@
   display: none !important;
 }
 
+.breadcrumbs-below-tabs > div,
 .tabs-breadcrumbs,
 .monaco-breadcrumbs {
   height: 30px !important;
@@ -130,7 +138,6 @@ a .monaco-breadcrumbs-picker,
   > .content
   .editor-group-container
   > .title:not(.tabs) {
-  /* padding-left: 65px !important; */
   background-color: #1c1c1c !important;
 }
 

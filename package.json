@@ -12,19 +12,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Aventura Zen",
+        "label": "Aventura Zen Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/aventura-zen.json"
+        "path": "./themes/aventura-zen-dark.json"
       },
       {
-        "label": "Aventura Sundown",
-        "uiTheme": "vs-dark",
-        "path": "./themes/aventura-sundown.json"
-      },
-      {
-        "label": "Aventura Borealis",
-        "uiTheme": "vs-dark",
-        "path": "./themes/aventura-borealis.json"
+        "label": "Aventura Zen Light",
+        "uiTheme": "hc-light",
+        "path": "./themes/aventura-zen-light.json"
       }
     ],
     "iconThemes": [

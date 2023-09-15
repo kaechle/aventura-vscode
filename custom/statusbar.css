@@ -1,11 +1,38 @@
-/* statusbar */
+@media (prefers-color-scheme: light) {
+  #workbench\.parts\.statusbar {
+    background-color: #fdfdfd !important;
+    --status-border-top-color: #e6e6e6 !important;
+    color: #00000080 !important;
+  }
+
+  .codicon-error:before {
+    color: #c5192b;
+  }
+
+  .codicon-warning:before {
+    color: #bf620b;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #workbench\.parts\.statusbar {
+    background-color: #1c1c1c !important;
+    --status-border-top-color: #363636 !important;
+    color: #ffffff80!important;
+  }
+
+  .codicon-error:before {
+    color: #ef5a69;
+  }
+
+  .codicon-warning:before {
+    color: #e99e58;
+  }
+}
 
 #workbench\.parts\.statusbar {
-  outline: 1px solid #1c1c1c;
-  background-color: #1c1c1c !important;
-  --status-border-top-color: #363636 !important;
-  box-shadow: 0px -1px 0 -1px black;
   bottom: 22px !important;
+  z-index: 100;
 }
 
 .monaco-workbench .part.statusbar > .items-container > .statusbar-item {
@@ -23,11 +50,9 @@
 
 .codicon-error:before {
   content: '\ea87';
-  color: #ef5a69;
 }
 
 .codicon-warning:before {
-  color: #e99e58;
   content: '\ea6c';
 }
 

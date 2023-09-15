@@ -27,52 +27,41 @@ html {
 .monaco-workbench.border:not(.fullscreen) {
   border: unset !important;
 }
-/*
-#workbench\.parts\.titlebar,
-.monaco-workbench.mac .part.titlebar {
-  height: 0 !important;
-  display: none !important;
-}
-
-body .noauxiliarybar,
-body .nopanel.noauxiliarybar,
-body .nopanel {
-  height: 100% !important;
-  position: relative !important;
-}
-
-.monaco-split-view2.horizontal
-  > .monaco-scrollable-element
-  > .split-view-container
-  > .split-view-view {
-  display: flex !important;
-} */
 
 .mac:not(:has(.editor)) {
   font-family: 'SF Pro Display' !important;
   font-weight: 500 !important;
   font-size: 13px !important;
-  color: #f8fdfe;
-}
-/*
-body
-  .monaco-grid-view
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(1) {
-  top: 0 !important;
-  height: 0 !important;
 }
 
-body
-  .monaco-grid-view
-  > div
-  > div
-  > div.monaco-scrollable-element.mac
-  > div.split-view-container
-  > div:nth-child(3) {
-  height: 100% !important;
-  top: 0 !important;
-} */
+@media (prefers-color-scheme: light) {
+  .monaco-workbench .codicon {
+    color: #696969 !important;
+  }
+
+  .mac:not(:has(.editor)) {
+    color: #000000c0;
+  }
+
+  .monaco-icon-label
+    > .monaco-icon-label-container
+    > .monaco-icon-name-container
+    > .label-name {
+    color: #000000c0 !important;
+    font-weight: 500 !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .mac:not(:has(.editor)) {
+    color: #ffffffc0;
+  }
+
+  .monaco-icon-label
+    > .monaco-icon-label-container
+    > .monaco-icon-name-container
+    > .label-name {
+    color: #ffffffc0 !important;
+    font-weight: 500 !important;
+  }
+}

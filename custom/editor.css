@@ -1,9 +1,3 @@
-.monaco-editor .margin-view-overlays .cldr:not(.codicon) {
-  position: absolute;
-  height: 100%;
-  left: -9px !important;
-}
-
 .monaco-editor .margin-view-overlays .line-numbers {
   position: absolute;
   letter-spacing: -1.2px;
@@ -15,99 +9,82 @@
   cursor: default;
   font-weight: 550;
   height: 100%;
-  font-size: 13.3px;
+  font-size: 14.2px;
   font-kerning: none;
   font-variant: slashed-zero;
-}
-
-.dirty-diff-glyph {
-  opacity: 0.9 !important;
-  outline-style: solid;
-  border-radius: 0.5px;
-  width: 2px !important;
-}
-
-.dirty-diff-glyph.dirty-diff-added {
-  outline-color: #96f5c5;
-  background-color: #96f5c5;
-}
-
-.dirty-diff-glyph.dirty-diff-modified {
-  outline-color: #95caf8;
-  background-color: #95caf8;
-}
-
-.dirty-diff-glyph .dirty-diff-deleted {
-  outline-color: #ff626c;
-  background-color: #ff626c;
-}
-
-.monaco-editor .margin-view-overlays .dirty-diff-glyph:hover {
-  width: 0 !important;
-  left: -9px !important;
-}
-
-.cldr.dirty-diff-glyph.dirty-diff-added:before {
-  content: '|';
-  color: transparent;
-  position: absolute;
-  font-size: 18px;
-  display: flex;
-  text-shadow: 0px 0px 30px #96f5c5;
-  filter: saturate(1.25);
-}
-
-.dirty-diff-glyph:hover .dirty-diff-modified:before {
-  content: '|';
-  color: transparent;
-  position: absolute;
-  font-size: 18px;
-  display: flex;
-  filter: saturate(1.5);
-  text-shadow: 0px 0px 30px #96f5c5;
-}
-
-.cldr.dirty-diff-glyph.dirty-diff-modified:before {
-  content: '|';
-  position: absolute;
-  color: transparent;
-  font-size: 18px;
-  display: flex;
-  filter: saturate(1.5);
-  text-shadow: 0px 0px 30px #95caf8;
-}
-
-.dirty-diff-glyph:hover.dirty-diff-modified:before {
-  content: '|';
-  position: absolute;
-  font-size: 18px;
-  display: flex;
-  filter: saturate(1.5);
-  text-shadow: 0px 0px 30px #95caf8;
-}
-
-.cldr.dirty-diff-glyph.dirty-diff-deleted:before {
-  content: '>';
-  position: absolute;
-  font-size: 11px;
-  top: 10px;
-  font-weight: 900;
-  color: transparent;
-  display: flex;
-  text-shadow: 0px 0px 30px #ff626c;
-}
-
-.dirty-diff-glyph:hover.dirty-diff-deleted:before {
-  content: '>';
-  position: absolute;
-  font-size: 11px;
-  top: 10px;
-  font-weight: 900;
-  display: flex;
-  filter: saturate(1.5);
-  text-shadow: 0px 0px 30px #e9505a;
 }
 
 .monaco-editor .relative-current-line-number {
   text-align: unset !important;
 }
+
+.dirty-diff-glyph.dirty-diff-added {
+  opacity: 0.9 !important;
+  outline-style: solid;
+  border-radius: 0.5px;
+  width: 2px !important;
+  outline-color: #83edb8;
+  background-color: #83edb8;
+  left: -9px !important;
+}
+
+.dirty-diff-glyph.dirty-diff-modified {
+  opacity: 0.9 !important;
+  outline-style: solid;
+  border-radius: 0.5px;
+  width: 2px !important;
+  outline-color: #85bcec;
+  background-color: #85bcec;
+  left: -9px !important;
+}
+
+.cldr.dirty-diff-glyph.dirty-diff-deleted {
+  outline-color: #ff626c;
+  position: absolute;
+  top: 10px;
+  margin-left: -29px !important;
+}
+
+.monaco-editor .margin-view-overlays .dirty-diff-glyph:hover {
+  width: 0 !important;
+  left: -10px !important;
+}
+
+.dirty-diff-glyph:hover .dirty-diff-added:before,
+.cldr.dirty-diff-glyph.dirty-diff-added:before {
+  content: '##';
+  position: relative !important;
+  left: -10px !important;
+  color: transparent;
+  font-size: 15px;
+  font-weight: 900;
+  display: flex;
+  text-shadow: 0px 0px 20px #68dda2d0;
+}
+
+.dirty-diff-glyph:hover .dirty-diff-modified:before,
+.cldr.dirty-diff-glyph.dirty-diff-modified:before {
+  content: '##';
+  position: relative !important;
+  left: -10px !important;
+  color: transparent;
+  font-size: 15px;
+  font-weight: 900;
+  display: flex;
+  text-shadow: 0px 0px 20px #73b7f1c0;
+}
+
+
+.cldr.dirty-diff-glyph.dirty-diff-deleted:before,
+.dirty-diff-glyph:hover.dirty-diff-deleted:before {
+  content: '##';
+  position: relative !important;
+  left: -15px !important;
+  top: 50% !important;
+  color: transparent;
+  font-size: 15px;
+  font-weight: 900;
+  display: flex;
+  text-shadow: 0px 0px 20px #e9505ae0;
+}
+

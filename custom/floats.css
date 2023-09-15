@@ -1,3 +1,64 @@
+@media (prefers-color-scheme: light) {
+  .quick-input-widget,
+  .monaco-workbench .context-view,
+  .monaco-hover-widget,
+  .editor-widget {
+    background-color: #e9e9e9b0 !important;
+    border: 1px solid #c2c2c2 !important;
+    outline: 0.75px solid #d5d5d5;
+  }
+
+  .notifications-toasts.visible > div > div {
+    border-radius: 14px !important;
+    background-color: #e9e9e9b0 !important;
+    border: 1px solid #c2c2c2 !important;
+    outline: 0.75px solid #d5d5d5;
+    backdrop-filter: blur(16px);
+    filter: brightness(1.2);
+  }
+
+  .quick-input-widget {
+    margin-top: 140px;
+    border-radius: 14px !important;
+    margin-left: -278px;
+    box-shadow: 0 32px 126px 16px #0000001f !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .quick-input-widget,
+  .monaco-workbench .context-view,
+  .monaco-hover-widget,
+  .editor-widget {
+    background-color: #303030aa !important;
+    border: 1px solid #4e4e4e !important;
+    outline: 0.75px solid #000000;
+  }
+
+  .notifications-toasts.visible > div > div {
+    border-radius: 14px !important;
+    background-color: #303030aa !important;
+    border: 1px solid #4e4e4e !important;
+    outline: 0.75px solid #000000;
+    backdrop-filter: blur(16px);
+    filter: brightness(1.2);
+  }
+
+  .quick-input-widget {
+    margin-top: 140px;
+    border-radius: 14px !important;
+    margin-left: -278px;
+    box-shadow: 0 8px 16px 12px #11111180 !important;
+  }
+}
+
+.quick-input-widget,
+.monaco-workbench .context-view,
+.monaco-hover-widget,
+.editor-widget {
+  backdrop-filter: blur(16px);
+}
+
 /* command palette */
 div.quick-input-widget.show-file-icons
   > div.quick-input-header
@@ -17,13 +78,6 @@ div.quick-input-widget.show-file-icons
   background: transparent !important;
 }
 
-.quick-input-widget {
-  margin-top: 140px;
-  border-radius: 14px !important;
-  margin-left: -278px;
-  box-shadow: 0 8px 16px 12px #11111180 !important;
-}
-
 .context-view,
 .editor-widget,
 .quick-input-list .monaco-list-row {
@@ -39,25 +93,6 @@ div.quick-input-widget.show-file-icons
 
 .monaco-editor .find-widget .monaco-findInput .input {
   font-size: 12px !important;
-}
-
-.quick-input-widget,
-.monaco-workbench .context-view,
-.monaco-hover-widget,
-.editor-widget {
-  background-color: #303030aa !important;
-  border: 1px solid #4e4e4e !important;
-  outline: 0.75px solid #000000;
-  backdrop-filter: blur(16px);
-}
-
-.notifications-toasts.visible > div > div {
-  border-radius: 14px !important;
-  background-color: #303030aa !important;
-  border: 1px solid #4e4e4e !important;
-  outline: 0.75px solid #000000;
-  backdrop-filter: blur(16px);
-  filter: brightness(1.2);
 }
 
 .monaco-workbench .context-view,

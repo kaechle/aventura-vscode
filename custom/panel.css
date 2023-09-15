@@ -1,4 +1,4 @@
-.monaco-sash.mac.horizontal {
+#editor > div > div > div.sash-container > div {
   cursor: row-resize;
   cursor: row-resize !important;
   z-index: 100 !important;

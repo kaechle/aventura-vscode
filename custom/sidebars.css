@@ -44,51 +44,32 @@ div#workbench\.parts\.sidebar {
   width: calc(100% - 15px);
   border-radius: 5px;
 }
-/*
-.monaco-scrollable-element
-  .split-view-container
-  > div:nth-child(1)
-  .pane-body
-  > div.explorer-folders-view.file-icon-themable-tree.show-file-icons
-  > div
-  > div {
-  display: flex !important;
-  height: 100% !important;
-}
-
-.monaco-list-rows {
-  display: flex !important;
-  flex-direction: column;
-}
-
-.open-editors .monaco-list .monaco-list-row {
-  padding-left: unset !important;
-}
-
-.scm-view .monaco-tl-contents > div {
-  padding-left: 6px;
-  padding-right: unset !important;
-}
-
-#list_id_1_3
-  > div
-  > div.monaco-tl-twistie.collapsible.codicon.codicon-tree-item-expanded {
-  padding-left: 4px !important;
-}
-
-#workbench\.parts\.sidebar > div.composite.title > div.title-label > h2 {
-  font-weight: 500;
-} */
 
 div#workbench\.parts\.auxiliarybar {
   position: relative !important;
   z-index: 11 !important;
-  background-color: #232323 !important;
-  border-left: 1px solid #000000 !important;
 }
 
-#workbench\.parts\.sidebar {
-  border-right: 1px solid #000000 !important;
+@media (prefers-color-scheme: light) {
+  #workbench\.parts\.sidebar {
+    border-right: 1px solid #dfdfdf !important;
+  }
+
+  div#workbench\.parts\.auxiliarybar {
+    background-color: #f6f6f6 !important;
+    border-left: 1px solid #dfdfdf !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #workbench\.parts\.sidebar {
+    border-right: 1px solid #000000 !important;
+  }
+
+  div#workbench\.parts\.auxiliarybar {
+    background-color: #262626 !important;
+    border-left: 1px solid #000000 !important;
+  }
 }
 
 .monaco-tree-type-filter-grab.codicon.codicon-debug-gripper,
