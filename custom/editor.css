@@ -1,90 +1,128 @@
 .monaco-editor .margin-view-overlays .line-numbers {
-  position: absolute;
-  letter-spacing: -1.2px;
-  font-family: 'MonoLisa Custom';
-  text-align: right;
-  font-variant-numeric: oldstyle-nums;
-  vertical-align: middle;
-  box-sizing: border-box;
-  cursor: default;
-  font-weight: 550;
-  height: 100%;
-  font-size: 14.2px;
-  font-kerning: none;
-  font-variant: slashed-zero;
+    position: absolute;
+    letter-spacing: -1.2px;
+    font-family: 'MonoLisa Custom';
+    text-align: right;
+    font-variant-numeric: oldstyle-nums;
+    vertical-align: middle;
+    box-sizing: border-box;
+    cursor: default;
+    font-weight: 550;
+    height: 100%;
+    font-size: 14.2px;
+    font-kerning: none;
+    font-variant: slashed-zero;
+}
+
+div.minimap.slider-mouseover > div.minimap-slider > div {
+    height: 156px !important;
+}
+
+canvas.minimap-decorations-layer {
+    left: -5px !important;
+    width: 235px !important;
+}
+
+.monaco-editor .minimap {
+    z-index: 1 !important;
+}
+
+.minimap.slider-mouseover:after {
+    content: '|';
+    width: 160%;
+    height: 100%;
+    display: block;
+    opacity: 1;
+    background-color: transparent;
+    border-left: 2px solid #252525;
+    margin-left: -4px;
+    color: transparent;
+}
+
+#workbench\.parts\.editor .minimap.slider-mouseover > .minimap-slider {
+    position: absolute;
+    transform: translate3d(0px, 0px, 0px);
+    contain: strict;
+    width: 184px;
+    margin-left: -4px !important;
+    height: 156px;
 }
 
 .monaco-editor .relative-current-line-number {
-  text-align: unset !important;
+    text-align: unset !important;
 }
 
 .dirty-diff-glyph.dirty-diff-added {
-  opacity: 0.9 !important;
-  outline-style: solid;
-  border-radius: 0.5px;
-  width: 2px !important;
-  outline-color: #83edb8;
-  background-color: #83edb8;
-  left: -9px !important;
+    outline-style: solid;
+    border-radius: 0.1px;
+    width: 2px !important;
+    outline-color: #eec382;
+    background-color: #eec382;
+    outline-width: 2px;
+    left: -9px !important;
 }
 
 .dirty-diff-glyph.dirty-diff-modified {
-  opacity: 0.9 !important;
-  outline-style: solid;
-  border-radius: 0.5px;
-  width: 2px !important;
-  outline-color: #85bcec;
-  background-color: #85bcec;
-  left: -9px !important;
+    outline-style: solid;
+    border-radius: 0.1px;
+    width: 2px !important;
+    outline-color: #91b9de;
+    background-color: #91b9de;
+    outline-width: 2px;
+    left: -9px !important;
 }
 
 .cldr.dirty-diff-glyph.dirty-diff-deleted {
-  outline-color: #ff626c;
-  position: absolute;
-  top: 10px;
-  margin-left: -29px !important;
+    outline-color: #d56c88;
+    position: absolute;
+    top: 10px;
+    margin-left: -25px !important;
+    z-index: 15;
 }
 
 .monaco-editor .margin-view-overlays .dirty-diff-glyph:hover {
-  width: 0 !important;
-  left: -10px !important;
+    width: 0 !important;
+    left: -7px !important;
 }
 
 .dirty-diff-glyph:hover .dirty-diff-added:before,
 .cldr.dirty-diff-glyph.dirty-diff-added:before {
-  content: '##';
-  position: relative !important;
-  left: -10px !important;
-  color: transparent;
-  font-size: 15px;
-  font-weight: 900;
-  display: flex;
-  text-shadow: 0px 0px 20px #68dda2d0;
+    content: '##';
+    position: relative !important;
+    left: -10px !important;
+    color: transparent;
+    font-size: 15px;
+    font-weight: 900;
+    display: flex;
+    text-shadow: 0px 0px 14px #eec382;
 }
 
 .dirty-diff-glyph:hover .dirty-diff-modified:before,
 .cldr.dirty-diff-glyph.dirty-diff-modified:before {
-  content: '##';
-  position: relative !important;
-  left: -10px !important;
-  color: transparent;
-  font-size: 15px;
-  font-weight: 900;
-  display: flex;
-  text-shadow: 0px 0px 20px #73b7f1c0;
+    content: '##';
+    position: relative !important;
+    left: -10px !important;
+    color: transparent;
+    font-size: 15px;
+    font-weight: 900;
+    display: flex;
+    text-shadow: 0px 0px 14px #91b9de;
 }
-
 
 .cldr.dirty-diff-glyph.dirty-diff-deleted:before,
 .dirty-diff-glyph:hover.dirty-diff-deleted:before {
-  content: '##';
-  position: relative !important;
-  left: -15px !important;
-  top: 50% !important;
-  color: transparent;
-  font-size: 15px;
-  font-weight: 900;
-  display: flex;
-  text-shadow: 0px 0px 20px #e9505ae0;
+    content: '##';
+    position: relative !important;
+    left: -15px !important;
+    top: 50% !important;
+    color: transparent;
+    font-size: 15px;
+    font-weight: 900;
+    display: flex;
+    text-shadow: 0px 0px 12px #d56c88a0;
 }
 
+.monaco-editor .dirty-diff-deleted:after {
+    margin-left: -3px !important;
+    z-index: 29 !important;
+}

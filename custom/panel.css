@@ -1,7 +1,18 @@
+#terminal > div.composite.title {
+    border-bottom: unset !important;
+}
+
 #editor > div > div > div.sash-container > div {
-  cursor: row-resize;
-  cursor: row-resize !important;
-  z-index: 100 !important;
-  margin-top: -30px !important;
-  height: 4px !important;
+    cursor: row-resize !important;
+    z-index: 100 !important;
+    margin-top: -30px !important;
+    height: 4px !important;
+}
+
+div#workbench\.parts\.panel {
+    height: 103% !important;
+}
+
+.monaco-workbench .part.panel.bottom .composite.title {
+    border: unset !important;
 }

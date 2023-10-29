@@ -1,67 +1,64 @@
-* {
-  -webkit-font-smoothing: antialiased !important;
-  cursor: default !important;
-}
-
 html {
-  position: relative !important;
-  height: 100% !important;
-  top: -35px !important;
+    top: -34px !important;
+    position: relative !important;
+    height: 100vh !important;
 }
 
-.monaco-workbench.border.mac.macos-bigsur-or-newer {
-  border-radius: unset !important;
+.monaco-workbench .codicon[class*='codicon-'] {
+    font-size: 15px !important;
+}
+
+.monaco-workbench.border {
+    border-radius: unset !important;
 }
 
 #monaco-parts-splash {
-  height: 100vh !important;
-  width: 100vw !important;
-  border-radius: unset !important;
-  --window-border-color: transparent !important;
+    width: 100vw !important;
+    border-radius: unset !important;
+    --window-border-color: transparent !important;
 }
 
 .monaco-workbench.border.mac {
-  border-radius: unset !important;
+    border-radius: unset !important;
 }
 
 .monaco-workbench.border:not(.fullscreen) {
-  border: unset !important;
+    border: unset !important;
 }
 
 .mac:not(:has(.editor)) {
-  font-family: 'SF Pro Display' !important;
-  font-weight: 500 !important;
-  font-size: 13px !important;
+    font-family: 'SF Pro Display' !important;
+    font-weight: 550 !important;
+    font-size: 13px !important;
 }
 
 @media (prefers-color-scheme: light) {
-  .monaco-workbench .codicon {
-    color: #696969 !important;
-  }
+    .monaco-workbench .codicon {
+        color: #696969 !important;
+    }
 
-  .mac:not(:has(.editor)) {
-    color: #000000c0;
-  }
+    .mac:not(:has(.editor)) {
+        color: #000000c0;
+    }
 
-  .monaco-icon-label
-    > .monaco-icon-label-container
-    > .monaco-icon-name-container
-    > .label-name {
-    color: #000000c0 !important;
-    font-weight: 500 !important;
-  }
+    .monaco-icon-label
+        > .monaco-icon-label-container
+        > .monaco-icon-name-container
+        > .label-name {
+        color: #000000c0 !important;
+        font-weight: 500 !important;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
-  .mac:not(:has(.editor)) {
-    color: #ffffffc0;
-  }
+    .mac:not(:has(.editor)) {
+        color: #ffffffc0;
+    }
 
-  .monaco-icon-label
-    > .monaco-icon-label-container
-    > .monaco-icon-name-container
-    > .label-name {
-    color: #ffffffc0 !important;
-    font-weight: 500 !important;
-  }
+    .monaco-icon-label
+        > .monaco-icon-label-container
+        > .monaco-icon-name-container
+        > .label-name {
+        font-weight: 600 !important;
+    }
 }

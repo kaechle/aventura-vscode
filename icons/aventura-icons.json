@@ -57,7 +57,8 @@
     "zshrc": "_terminal_dark",
     "lock": "_settings_dark",
     "log": "_doc_dark",
-    "snap": "_settings_dark"
+    "snap": "_settings_dark",
+    "sketch": "_image_dark"
   },
   "languageIds": {
     "astrojs": "_code_dark",

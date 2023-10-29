@@ -14,6 +14,8 @@
   font-size: 12px !important;
 }
 
+.breadcrumbs-control .monaco-icon-label:before
+
 .context-view .monaco-list > .monaco-scrollable-element {
   width: calc(100% - 12px);
   margin: 6px;
@@ -36,7 +38,7 @@
 }
 
 .breadcrumbs-control .monaco-icon-label,
-.tabs-breadcrumbs .breadcrumbs-control .monaco-icon-label:before {
+.breadcrumbs-control .monaco-icon-label:before {
   height: 30px !important;
   line-height: 30px !important;
 }

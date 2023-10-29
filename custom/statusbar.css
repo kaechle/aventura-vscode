@@ -1,72 +1,74 @@
 @media (prefers-color-scheme: light) {
-  #workbench\.parts\.statusbar {
-    background-color: #fdfdfd !important;
-    --status-border-top-color: #e6e6e6 !important;
-    color: #00000080 !important;
-  }
+    #workbench\.parts\.statusbar {
+        background-color: #fdfdfd !important;
+        --status-border-top-color: #e6e6e6 !important;
+        color: #00000080 !important;
+    }
 
-  .codicon-error:before {
-    color: #c5192b;
-  }
+    .codicon-error:before {
+        color: #df6d8d;
+    }
 
-  .codicon-warning:before {
-    color: #bf620b;
-  }
+    .codicon-warning:before {
+        color: #e4af5e;
+    }
 }
+
+/* #main-window > div:nth-child(3) > div > div > div.sash-container > div {
+    margin-top: -28px !important;
+} */
 
 @media (prefers-color-scheme: dark) {
-  #workbench\.parts\.statusbar {
-    background-color: #1c1c1c !important;
-    --status-border-top-color: #363636 !important;
-    color: #ffffff80!important;
-  }
+    footer#workbench\.parts\.statusbar {
+        background-color: #1e1e1e !important;
+        --status-border-top-color: #363636 !important;
+        --window-border-color: #363636 !important;
+        color: #ffffff68 !important;
+    }
 
-  .codicon-error:before {
-    color: #ef5a69;
-  }
+    .codicon-error:before {
+        color: #df6d8d;
+    }
 
-  .codicon-warning:before {
-    color: #e99e58;
-  }
+    .codicon-warning:before {
+        color: #e4af5e;
+    }
 }
-
+/*
 #workbench\.parts\.statusbar {
-  bottom: 22px !important;
-  z-index: 100;
-}
+    bottom: 14px !important;
+    z-index: 100;
+} */
 
 .monaco-workbench .part.statusbar > .items-container > .statusbar-item {
-  margin: 0;
+    margin: 0;
 }
 
 #status\.problems > a {
-  margin-left: unset;
-}
-
-.codicon-error,
-.codicon-warning {
-  opacity: 0.7;
+    margin-left: unset;
 }
 
 .codicon-error:before {
-  content: '\ea87';
+    content: '\ea87';
 }
 
 .codicon-warning:before {
-  content: '\ea6c';
-}
-
-div.split-view-container > div:has(.statusbar) {
-  height: 31px !important;
-  top: unset !important;
-  font-size: 11px !important;
-  bottom: 0;
+    content: '\ea6c';
 }
 
 footer#workbench\.parts\.statusbar {
-  height: 31px !important;
-  font-size: 12px !important;
-  font-weight: 600 !important;
-  position: absolute !important;
-  --window-border-color: #363636;
+    top: unset !important;
+    bottom: 22px !important;
+    z-index: 11 !important;
+    height: 31px !important;
+    --window-border-color: #363636;
+    position: absolute !important;
+}
+
+footer#workbench\.parts\.statusbar > div {
+    height: 31px !important;
+    font-size: 12px !important;
+    font-weight: 740 !important;
+    font-family: 'SF Pro Display';
+    --window-border-color: #363636;
 }

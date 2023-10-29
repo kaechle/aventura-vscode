@@ -1,78 +1,215 @@
 div#workbench\.parts\.sidebar {
-  position: relative !important;
-  z-index: 11;
+    position: relative !important;
+    z-index: 11;
+    padding-top: 34px;
+}
+
+div#auxiliarybar {
+    height: 100% !important;
+    padding-top: 34px !important;
+    z-index: 12;
+    position: relative;
+}
+
+.pane-header:hover {
+    border-top: 1px solid #ffffff15 !important;
+}
+
+div#workbench\.parts\.auxiliarybar {
+    max-width: fit-content !important;
+}
+
+#workbench\.parts\.sidebar > div > div:nth-child(1) > div > div > div > div {
+    font-size: 14px !important;
+}
+
+#workbench\.parts\.sidebar > div > div:nth-child(1) > div {
+    border-top: 1px solid #ffffff15 !important;
+    border-bottom: 1px solid #ffffff15 !important;
+}
+
+#workbench\.parts\.sidebar
+    > div
+    > div:nth-child(1)
+    > div
+    > div:nth-child(2)
+    > div {
+    width: 88% !important;
+}
+
+#workbench\.parts\.sidebar > div > div:nth-child(1) > div > div:nth-child(2) {
+    flex-direction: column;
+    position: absolute;
+    top: 29px;
+    width: 90% !important;
+}
+
+#workbench\.parts\.sidebar
+    > div
+    > div:nth-child(1)
+    > div
+    > div:nth-child(2)
+    > div:nth-child(1)
+    > div {
+    border-radius: 5px !important;
+}
+
+#workbench\.parts\.sidebar > div > div:nth-child(1),
+#workbench\.parts\.sidebar > div > div:nth-child(1) > div,
+#workbench\.parts\.sidebar > div > div:nth-child(1) > div > div {
+    display: flex;
+    height: 29px !important;
+    align-items: center !important;
+    justify-content: space-around !important;
+}
+
+#workbench\.view\.explorer
+    > div
+    > div
+    > div.monaco-scrollable-element.mac
+    > div.split-view-container {
+    height: calc(100% - 30px) !important;
+}
+
+.sidebar2-item-icon-anysphere {
+    padding: unset !important;
+    border-width: 0 !important;
+    border-style: none !important;
+    border-bottom-color: unset !important;
+    align-items: center;
+    margin: unset !important;
+    padding: unset !important;
+    width: 16px !important;
+    height: 16px !important;
+    cursor: pointer;
+    color: #ffffff90 !important;
+}
+
+#workbench\.parts\.sidebar > div > div:nth-child(1),
+#workbench\.parts\.sidebar > div > div:nth-child(1) > div {
+    background-color: unset !important;
+}
+
+.monaco-pane-view .pane > .pane-header > .title {
+    text-transform: capitalize !important;
+    color: #ffffff4f !important;
 }
 
 .monaco-list-row,
 .monaco-tl-row,
 .open-editor,
 .explorer-folders-view .explorer-item {
-  font-size: 13.2px;
-  font-weight: 450;
-  font-family: 'SF Pro Text';
-  cursor: auto;
+    font-size: 13.2px;
+    font-weight: 450;
+    font-family: 'SF Pro Text';
+    cursor: auto;
+}
+
+#workbench\.parts\.sidebar > div > div:nth-child(1) > div > div {
+    width: 80% !important;
 }
 
 .monaco-tree-type-filter {
-  position: absolute;
-  width: 96%;
-  max-width: unset !important;
-  top: unset !important;
-  right: unset !important;
-  bottom: 10px;
-  left: 0;
-  background-color: transparent !important;
-  box-shadow: unset !important;
-  display: flex;
-  padding: unset;
-  z-index: 10;
-  margin: 3px 5px !important;
-  border: unset !important;
-  border-radius: unset !important;
+    position: absolute;
+    width: 96%;
+    max-width: unset !important;
+    top: unset !important;
+    right: unset !important;
+    bottom: 10px;
+    left: 0;
+    background-color: transparent !important;
+    box-shadow: unset !important;
+    display: flex;
+    padding: unset;
+    z-index: 10;
+    margin: 3px 5px !important;
+    border: unset !important;
+    border-radius: unset !important;
 }
 
 .monaco-workbench .part > .title > .title-label {
-  display: none;
+    display: none;
 }
 
 .monaco-tl-twistie.force-twistie.collapsible.codicon.codicon-tree-item-expanded {
-  display: none !important;
+    display: none !important;
 }
 
 .monaco-list-row {
-  margin: 0 8px;
-  width: calc(100% - 15px);
-  border-radius: 5px;
+    margin: 0 8px;
+    width: calc(100% - 15px);
+    border-radius: 5px;
 }
 
 div#workbench\.parts\.auxiliarybar {
-  position: relative !important;
-  z-index: 11 !important;
+    position: relative !important;
+    z-index: 11 !important;
 }
 
 @media (prefers-color-scheme: light) {
-  #workbench\.parts\.sidebar {
-    border-right: 1px solid #dfdfdf !important;
-  }
+    #workbench\.parts\.sidebar {
+        border-right: 1px solid #dfdfdf !important;
+    }
 
-  div#workbench\.parts\.auxiliarybar {
-    background-color: #f6f6f6 !important;
-    border-left: 1px solid #dfdfdf !important;
-  }
+    div#workbench\.parts\.auxiliarybar {
+        background-color: #f6f6f6 !important;
+        border-left: 1px solid #dfdfdf !important;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
-  #workbench\.parts\.sidebar {
-    border-right: 1px solid #000000 !important;
-  }
+    #workbench\.parts\.sidebar {
+        border-right: 1px solid #000000 !important;
+    }
 
-  div#workbench\.parts\.auxiliarybar {
-    background-color: #262626 !important;
-    border-left: 1px solid #000000 !important;
-  }
+    div#workbench\.parts\.auxiliarybar {
+        background-color: #222222 !important;
+        border-left: 1px solid #000000 !important;
+    }
 }
 
 .monaco-tree-type-filter-grab.codicon.codicon-debug-gripper,
 .monaco-tree-type-filter-actionbar {
-  display: none !important;
+    display: none !important;
+}
+
+/* chat/ai ui */
+
+div#workbench\.parts\.auxiliarybar {
+    padding-top: 34px;
+}
+
+.monaco-workbench .part > .title {
+    height: 31px;
+    border: 1px solid #ffffff15;
+    border-right: unset !important;
+    border-left: unset !important;
+}
+
+.monaco-workbench .part > .composite.title {
+    align-items: center;
+}
+
+.sidebar .codicon-chevron-down:before {
+    content: '\ebeb';
+    font-size: 16px;
+    margin: unset !important;
+    padding: unset !important;
+}
+
+#workbench\.parts\.sidebar
+    > div
+    > div:nth-child(1)
+    > div
+    > div
+    > div:nth-child(7) {
+    margin: unset !important;
+}
+
+.global-actions {
+    display: none;
+}
+
+.monaco-workbench .part > .title > .title-actions .action-label.codicon {
+    color: #ffffff90;
 }

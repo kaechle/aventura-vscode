@@ -1,44 +1,49 @@
 {
-  "name": "aventura",
-  "displayName": "Aventura",
-  "description": "A highly-customized, opinionated theme built for macOS",
-  "version": "0.1.0",
-  "engines": {
-    "vscode": "^1.73.0"
-  },
-  "categories": [
-    "Themes"
-  ],
-  "contributes": {
-    "themes": [
-      {
-        "label": "Aventura Zen Dark",
-        "uiTheme": "vs-dark",
-        "path": "./themes/aventura-zen-dark.json"
-      },
-      {
-        "label": "Aventura Zen Light",
-        "uiTheme": "hc-light",
-        "path": "./themes/aventura-zen-light.json"
-      }
+    "name": "aventura",
+    "displayName": "Aventura",
+    "description": "A highly-customized, opinionated theme and icon set crafted for macOS.",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.73.0"
+    },
+    "categories": [
+        "Themes"
     ],
-    "iconThemes": [
-      {
-        "id": "finale-icons",
-        "label": "Finale Icons",
-        "path": "./icons/aventura-icons.json"
-      }
-    ]
-  },
-  "prettier": {
-    "trailingComma": "none",
-    "tabWidth": 2,
-    "semi": false,
-    "singleQuote": true,
-    "printWidth": 80,
-    "arrowParens": "always"
-  },
-  "devDependencies": {
-    "postcss": "^8.4.23"
-  }
+    "contributes": {
+        "themes": [
+            {
+                "label": "Aventura Zen Dark",
+                "uiTheme": "vs-dark",
+                "path": "./themes/aventura-zen-dark.json"
+            },
+            {
+                "label": "Aventura Zen Light",
+                "uiTheme": "hc-light",
+                "path": "./themes/aventura-zen-light.json"
+            },
+            {
+                "label": "Aventura Sundown",
+                "uiTheme": "vs-dark",
+                "path": "./themes/aventura-sundown.json"
+            }
+        ],
+        "iconThemes": [
+            {
+                "id": "aventura-icons",
+                "label": "Aventura Iconography",
+                "path": "./icons/aventura-icons.json"
+            }
+        ]
+    },
+    "prettier": {
+        "trailingComma": "none",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true,
+        "printWidth": 80,
+        "arrowParens": "always"
+    },
+    "devDependencies": {
+        "postcss": "^8.4.23"
+    }
 }
